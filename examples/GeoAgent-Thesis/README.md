@@ -72,3 +72,16 @@
 - `ideas/search_log.md`
 - `ideas/decision_matrix.md`
 - `ideas/mvp_plan.md`
+
+## Workflow Showcase
+
+如果你想直接展示“这个仓库如何把 ideation、绘图、写作和 reviewer 检查串成一个完整 workflow”，优先阅读：
+
+- `WORKFLOW_SHOWCASE.md`
+
+这份文档会按故事顺序展示：
+
+1. 如何先筛选方向
+2. 如何把方向转成图表证据
+3. 如何把图表转成论文表达
+4. 如何再用 reviewer 视角收缩 claim

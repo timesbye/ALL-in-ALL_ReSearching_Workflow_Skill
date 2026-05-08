@@ -4,6 +4,8 @@
 # Generated figure outputs if not intended to commit
 figures/outputs/*.png
 figures/outputs/*.pdf
+!figures/outputs/geoagent_workflow_showcase.png
+!figures/outputs/geoagent_workflow_showcase.pdf
 
 # Temporary ideation outputs
 ideas/tmp/

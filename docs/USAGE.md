@@ -106,6 +106,7 @@ examples/GeoAgent-Thesis/
 - `paper/context.md`
 - `paper/notes/demo_task.md`
 - `ideas/demo_ideation_task.md`
+- `WORKFLOW_SHOWCASE.md`
 
 ### 在本仓库内给示例项目建立 toolkit 链接
 
@@ -125,6 +126,12 @@ Linux / macOS / WSL：
 
 ```text
 examples/GeoAgent-Thesis/.ai/toolkit
+```
+
+如果你要给别人演示“这个仓库如何把 ideation、绘图、写作和 reviewer 检查串成一个顺序 workflow”，最应该先打开：
+
+```text
+examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md
 ```
 
 ## 5. Trae / Trae_CN 使用方式

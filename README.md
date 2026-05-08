@@ -147,6 +147,10 @@ examples/GeoAgent-Thesis/
 - ideation 任务：
   `examples/GeoAgent-Thesis/ideas/demo_ideation_task.md`
 
+如果你要直接展示这个仓库的整合 workflow，而不是单个 skill，优先阅读：
+
+- `examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md`
+
 建议先阅读：
 
 - `examples/GeoAgent-Thesis/README.md`

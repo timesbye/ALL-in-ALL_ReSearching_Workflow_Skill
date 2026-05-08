@@ -9,8 +9,8 @@ __pycache__/
 venv/
 
 # Generated figures
-outputs/
-figures/outputs/
+/outputs/
+/figures/outputs/
 
 # Temporary files
 tmp/
