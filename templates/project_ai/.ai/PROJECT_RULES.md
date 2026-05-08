@@ -50,6 +50,30 @@ Figure output rules:
 - Use readable labels, legends, and captions.
 - Avoid decorative or marketing-style charts.
 
+## Critical Ideation Rules
+
+For brainstorming, idea validation, product differentiation, research topic generation, novelty checks, or Agent workflow design, use:
+
+```text
+.ai/toolkit/skills/critical-ideation/
+```
+
+When using this skill:
+
+1. Do not only generate ideas.
+2. Challenge each idea directly.
+3. Search for existing products, papers, GitHub repos, or competitors when needed.
+4. Refine ideas after critique.
+5. Rank ideas using a decision matrix.
+6. Recommend no more than three top ideas by default.
+
+Generated ideation outputs should be saved to `ideas/`, preferably:
+
+- `ideas/idea_report.md`
+- `ideas/search_log.md`
+- `ideas/decision_matrix.md`
+- `ideas/mvp_plan.md`
+
 ## Mixed Task Workflow
 
 For figure + paper writing tasks:
@@ -61,6 +85,15 @@ For figure + paper writing tasks:
 5. Polish caption using academic writing prompts.
 6. Write result analysis paragraph.
 7. Check whether the figure supports the stated claim.
+
+For ideation tasks:
+
+1. Frame the problem clearly.
+2. Generate multiple candidate ideas.
+3. Critique them aggressively.
+4. Search for close existing work when current context matters.
+5. Refine and rank the ideas.
+6. Save the results into `ideas/`.
 
 ## Important Rule
 

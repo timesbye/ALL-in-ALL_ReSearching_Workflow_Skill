@@ -5,6 +5,10 @@
 figures/outputs/*.png
 figures/outputs/*.pdf
 
+# Temporary ideation outputs
+ideas/tmp/
+ideas/drafts/
+
 # Python
 __pycache__/
 *.pyc

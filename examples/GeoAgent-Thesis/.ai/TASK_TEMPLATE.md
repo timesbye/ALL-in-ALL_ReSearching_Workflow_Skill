@@ -15,6 +15,7 @@
 
 - 数据：
 - 论文上下文：
+- 当前想法 / 项目背景：
 - 目标输出：
 - 特殊要求：
 
@@ -22,8 +23,10 @@
 
 1. 如果是绘图任务，使用 `.ai/toolkit/skills/scientific-figure-making/`。
 2. 如果是论文表达任务，参考 `.ai/toolkit/prompt-libraries/awesome-ai-research-writing/`。
-3. 如果是混合任务，先完成图，再完成图注和论文分析。
-4. 所有输出都保存到当前项目，不要修改 toolkit 源文件。
+3. 如果是 brainstorm、选题、差异化、novelty 检查或 Agent workflow 设计任务，使用 `.ai/toolkit/skills/critical-ideation/`。
+4. 如果是图表和写作混合任务，先完成图，再完成图注和论文分析。
+5. 如果是 ideation 任务，输出优先保存到 `ideas/`。
+6. 所有输出都保存到当前项目，不要修改 toolkit 源文件。
 
 期望输出：
 
@@ -33,4 +36,8 @@
 - 中文图注
 - 英文图注
 - 实验分析段落
+- Idea report
+- Search log
+- Decision matrix
+- MVP plan
 - Reviewer 检查意见

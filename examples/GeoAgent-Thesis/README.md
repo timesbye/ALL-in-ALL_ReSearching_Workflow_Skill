@@ -13,7 +13,11 @@
 - `paper/context.md`
   论文背景与图表上下文。
 - `paper/notes/demo_task.md`
-  可直接发给 Agent 的任务示例。
+  图表 + 写作联动任务示例。
+- `ideas/demo_ideation_task.md`
+  critical-ideation 任务示例。
+- `ideas/`
+  ideation 输出目录。
 
 ## 建立 toolkit 链接
 
@@ -33,6 +37,8 @@
 
 ## 运行方式
 
+### 论文图表任务
+
 1. 先让 Agent 读取：
 
 ```text
@@ -47,3 +53,22 @@
 - 绘图脚本：`figures/scripts/`
 - 绘图结果：`figures/outputs/`
 - 分析草稿：聊天窗口或 `paper/notes/`
+
+### Idea / 选题任务
+
+1. 先让 Agent 读取：
+
+```text
+.ai/PROJECT_RULES.md
+.ai/toolkit/ROUTER.md
+.ai/toolkit/skills/critical-ideation/SKILL.md
+```
+
+2. 再把 `ideas/demo_ideation_task.md` 中的任务发送给 Agent。
+
+3. 期望输出位置：
+
+- `ideas/idea_report.md`
+- `ideas/search_log.md`
+- `ideas/decision_matrix.md`
+- `ideas/mvp_plan.md`

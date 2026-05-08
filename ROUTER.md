@@ -74,7 +74,45 @@ Rules:
 
 ---
 
-## 3. Mixed Figure + Writing Workflow
+## 3. Critical Ideation Skill
+
+Path:
+
+```text
+skills/critical-ideation/
+```
+
+Use for:
+
+- brainstorming
+- research idea generation
+- product idea generation
+- PRD innovation
+- startup idea validation
+- project differentiation
+- competitor-aware ideation
+- adversarial critique
+- Agent workflow design
+- self-media topic ideation
+- paper novelty check
+
+Workflow:
+
+1. Frame the ideation problem.
+2. Generate candidate ideas.
+3. Critique each idea aggressively.
+4. Search for existing work when novelty, feasibility, or market context depends on current information.
+5. Refine ideas based on critique and evidence.
+6. Rank ideas by novelty, feasibility, user value, differentiation, demonstrability, and fit.
+7. Recommend only the ideas worth building.
+
+Do not use this skill for normal paper polishing, translation, figure generation, or deterministic coding tasks.
+
+---
+
+## 4. Combined Workflows
+
+### Figure + Writing
 
 When a task involves both experimental visualization and paper writing:
 
@@ -86,9 +124,25 @@ When a task involves both experimental visualization and paper writing:
 6. Write a thesis-style or paper-style result analysis paragraph.
 7. Use reviewer-style critique to check whether the figure supports the stated claim.
 
+### Ideation + Writing
+
+When a task involves idea generation and formal writing:
+
+1. Use `critical-ideation` to generate, challenge, search, refine, and rank ideas.
+2. Save the ideation outputs to the target project's `ideas/`.
+3. Use `awesome-ai-research-writing` to turn the selected idea into a proposal, PRD, README, or paper section.
+
+### Ideation + Figure + Writing
+
+When a task involves experiment design or benchmark planning:
+
+1. Use `critical-ideation` to define the right experimental question and shortlist feasible directions.
+2. Use `scientific-figure-making` to visualize results or benchmark comparisons.
+3. Use `awesome-ai-research-writing` to write figure captions and result analysis.
+
 ---
 
-## 4. Routing Rules
+## 5. Routing Rules
 
 If the task is mainly about writing, translation, polishing, summarization, or review:
 
@@ -106,6 +160,14 @@ Use:
 skills/scientific-figure-making/
 ```
 
+If the task is mainly about brainstorming, idea validation, novelty checks, project differentiation, or competitor-aware ideation:
+
+Use:
+
+```text
+skills/critical-ideation/
+```
+
 If the task is about both figure generation and experiment analysis:
 
 Use both, in this order:
@@ -118,9 +180,20 @@ scientific-figure-making
 -> reviewer check
 ```
 
+If the task is about both ideation and formal writing:
+
+Use both, in this order:
+
+```text
+critical-ideation
+-> shortlist and MVP
+-> awesome-ai-research-writing
+-> proposal / PRD / introduction
+```
+
 ---
 
-## 5. Important Safety Rule
+## 6. Important Safety Rule
 
 Do not modify toolkit source files unless the user explicitly asks to update the toolkit itself.
 

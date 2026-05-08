@@ -2,24 +2,45 @@
 set -euo pipefail
 
 TOOLKIT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-SKILL_SOURCE="$TOOLKIT_ROOT/skills/scientific-figure-making"
+SKILLS_ROOT="$TOOLKIT_ROOT/skills"
 CODEX_SKILLS="$HOME/.codex/skills"
-SKILL_TARGET="$CODEX_SKILLS/scientific-figure-making"
 
-if [ ! -d "$SKILL_SOURCE" ]; then
-  echo "Skill source does not exist: $SKILL_SOURCE"
+if [ ! -d "$SKILLS_ROOT" ]; then
+  echo "Skills root does not exist: $SKILLS_ROOT"
   exit 1
 fi
 
 mkdir -p "$CODEX_SKILLS"
 
-if [ -e "$SKILL_TARGET" ]; then
-  echo "Existing skill target found: $SKILL_TARGET"
-  echo "Remove it manually if you want to recreate the link."
-  exit 0
+installed=()
+skipped=()
+
+for skill_source in "$SKILLS_ROOT"/*; do
+  [ -d "$skill_source" ] || continue
+  skill_name="$(basename "$skill_source")"
+  skill_target="$CODEX_SKILLS/$skill_name"
+
+  if [ -e "$skill_target" ]; then
+    skipped+=("$skill_name")
+    continue
+  fi
+
+  ln -s "$skill_source" "$skill_target"
+  installed+=("$skill_name")
+done
+
+echo "Codex skill install complete."
+
+if [ "${#installed[@]}" -gt 0 ]; then
+  echo "Installed:"
+  for skill_name in "${installed[@]}"; do
+    echo "  - $skill_name"
+  done
 fi
 
-ln -s "$SKILL_SOURCE" "$SKILL_TARGET"
-
-echo "Installed scientific-figure-making skill to Codex:"
-echo "$SKILL_TARGET"
+if [ "${#skipped[@]}" -gt 0 ]; then
+  echo "Skipped existing targets:"
+  for skill_name in "${skipped[@]}"; do
+    echo "  - $skill_name"
+  done
+fi

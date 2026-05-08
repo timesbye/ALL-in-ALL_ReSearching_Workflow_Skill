@@ -1,20 +1,22 @@
 # DION AI Research Toolkit
 
-一个面向科研写作与论文绘图的可复用工具仓库。
+一个面向科研写作、论文绘图和高质量 ideation 的可复用工具仓库。
 
-这个仓库把两个上游资源组织到同一个稳定入口下：
+这个仓库把三类能力组织到同一个稳定入口下：
 
 - `prompt-libraries/awesome-ai-research-writing/`
   用于学术写作、润色、翻译、实验分析和 reviewer 风格检查。
 - `skills/scientific-figure-making/`
   用于生成论文级 matplotlib 科研图、导出 PDF/PNG，并沉淀可复现脚本。
+- `skills/critical-ideation/`
+  用于 brainstorm、主动质疑、竞品 / 论文 / GitHub 检索、方向重构、排序和 MVP 收敛。
 
 仓库目标：
 
 - 为 Trae / Trae_CN / GLM5.1 提供项目内显式路径调用方式。
 - 为 Codex 提供全局 skill 安装方式。
 - 让不同项目通过 `.ai/toolkit` 软链接或 Junction 复用本工具库。
-- 避免在每个业务项目里重复复制 Prompt 库和绘图 Skill。
+- 避免在每个业务项目里重复复制 Prompt 库和技能目录。
 
 ## Repository Layout
 
@@ -22,11 +24,18 @@
 DION-AI-Research-Toolkit/
 |-- README.md
 |-- BUILD.md
+|-- BUILD_skill3.md
 |-- ROUTER.md
+|-- docs/
+|   `-- USAGE.md
 |-- prompt-libraries/
 |   `-- awesome-ai-research-writing/
 |-- skills/
-|   `-- scientific-figure-making/
+|   |-- scientific-figure-making/
+|   `-- critical-ideation/
+|       |-- SKILL.md
+|       |-- templates/
+|       `-- examples/
 |-- prompts/
 |   |-- polish_cn.md
 |   |-- translate_cn_to_en.md
@@ -43,7 +52,10 @@ DION-AI-Research-Toolkit/
 |       |-- figures/
 |       |   |-- scripts/
 |       |   `-- outputs/
+|       |-- ideas/
 |       `-- paper/
+|-- examples/
+|   `-- GeoAgent-Thesis/
 `-- scripts/
     |-- install_to_codex.ps1
     |-- install_to_codex.sh
@@ -75,6 +87,8 @@ chmod +x scripts/install_to_codex.sh
 ./scripts/install_to_codex.sh
 ```
 
+当前安装脚本会把 `skills/` 目录下的全部 toolkit skills 安装到 Codex 全局目录。
+
 ## Recommended Project Bootstrap
 
 ```text
@@ -87,6 +101,7 @@ My-Research-Project/
 |-- figures/
 |   |-- scripts/
 |   `-- outputs/
+|-- ideas/
 `-- paper/
 ```
 
@@ -108,8 +123,12 @@ Copy-Item -Recurse .\templates\project_ai\* D:\Projects\My-Research-Project\
   使用 `prompt-libraries/awesome-ai-research-writing/`。
 - 仅绘图任务：
   使用 `skills/scientific-figure-making/`。
+- 仅 ideation / 选题 / 差异化任务：
+  使用 `skills/critical-ideation/`。
 - 图表 + 论文表达联合任务：
   先生成图，再写图注、结果分析和 reviewer 检查。
+- ideation + proposal / PRD / paper introduction 联合任务：
+  先用 `critical-ideation` 生成并筛选方向，再用写作 prompt 库写成正式文本。
 
 详见 [ROUTER.md](ROUTER.md) 与 `prompts/` 目录中的入口文档。
 
@@ -121,12 +140,16 @@ Copy-Item -Recurse .\templates\project_ai\* D:\Projects\My-Research-Project\
 examples/GeoAgent-Thesis/
 ```
 
-示例项目包含样例数据、论文上下文和可直接发送给 Agent 的任务说明，适合用于验证整套工作流是否跑通。
+示例项目包含两类可直接发送给 Agent 的任务：
+
+- 图表 + 写作任务：
+  `examples/GeoAgent-Thesis/paper/notes/demo_task.md`
+- ideation 任务：
+  `examples/GeoAgent-Thesis/ideas/demo_ideation_task.md`
 
 建议先阅读：
 
 - `examples/GeoAgent-Thesis/README.md`
-- `examples/GeoAgent-Thesis/paper/notes/demo_task.md`
 - `docs/USAGE.md`
 
 ## Usage Guide
@@ -141,6 +164,7 @@ examples/GeoAgent-Thesis/
 - 如何把 toolkit 链接到具体项目
 - 如何使用仓库内的示例项目
 - Trae / Trae_CN / Codex 的推荐调用方式
+- 如何使用 `critical-ideation` 进行 brainstorm、novelty 检查和 MVP 收敛
 
 ## Notes
 
