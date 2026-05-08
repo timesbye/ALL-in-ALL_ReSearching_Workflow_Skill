@@ -1,0 +1,6 @@
+Method,Accuracy,F1,InferenceLatencyMs
+CNN-Baseline,82.1,79.4,28
+Transformer-Base,84.7,81.8,41
+GeoAgent-Small,86.2,83.9,35
+GeoAgent-Base,87.6,85.1,43
+GeoAgent-Full,88.4,86.7,58

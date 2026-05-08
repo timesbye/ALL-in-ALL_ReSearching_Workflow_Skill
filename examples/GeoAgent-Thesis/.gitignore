@@ -1,0 +1,12 @@
+# AI toolkit link
+.ai/toolkit
+
+# Generated figure outputs if not intended to commit
+figures/outputs/*.png
+figures/outputs/*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
