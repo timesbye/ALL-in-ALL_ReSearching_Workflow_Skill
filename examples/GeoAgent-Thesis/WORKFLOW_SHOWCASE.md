@@ -1,14 +1,14 @@
 # GeoAgent Workflow Showcase
 
-[![Toolkit](https://img.shields.io/badge/Toolkit-ReSearching\_Figures\_Workflow-blue?logo=github)](https://github.com/timesbye/ReSearching_Figures_Workflow)
+[![Toolkit](https://img.shields.io/badge/Toolkit-ALL-in-ALL\_ReSearching\_Workflow\_Skill-blue?logo=github)](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill)
 
-这份示例不是在展示"某一个单点能力有多强"，而是在展示 [ReSearching_Figures_Workflow](https://github.com/timesbye/ReSearching_Figures_Workflow) 如何通过引用已有前沿科研工具并在此基础上构建原创 brainstorm 能力，整合成一个可复用的一体式 workflow。
+这份示例不是在展示"某一个单点能力有多强"，而是在展示 [ALL-in-ALL_ReSearching_Workflow_Skill](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill) 如何把散落在各处的好工具串到一起，补上缺失的关键环节，再让它们按正确顺序跑起来，整合成一个可复用的一体式 workflow。核心是 Skill 整合概念，后续会根据开源项目进展及前沿方向持续更新和替换。
 
 这里的关键不是声称我们发明了所有模块，而是：
 
 - **参考** [`DeepPaperNote`](https://github.com/917Dhj/DeepPaperNote) 的论文深度阅读理念，编写论文阅读 Skill
 - **参考** [`Auto-Scholar`](https://github.com/CAICAIIs/Auto-Scholar)（MIT License）的文献综述自动化理念，编写文献综述 Skill
-- **原创构建** [`critical-ideation`](https://github.com/timesbye/ReSearching_Figures_Workflow/tree/main/skills/critical-ideation)——一个 Critic + Search + Ideation 型选题 Skill
+- **原创构建** [`critical-ideation`](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/tree/main/skills/critical-ideation)——一个 Critic + Search + Ideation 型选题 Skill
 - **参考** [`figures4papers`](https://github.com/ChenLiu-1996/figures4papers) 的绘图范式，编写科研绘图 Skill
 - **参考** [`Scholarly`](https://github.com/ShiyangZheng/scholarly) 的引导式写作理念，编写论文写作 Skill
 - **引用** [`awesome-ai-research-writing`](https://github.com/Leey21/awesome-ai-research-writing) 作为学术润色 Prompt 库
@@ -277,18 +277,18 @@ paper reading
 
 实际演示时，按下面顺序最清楚：
 
-1. 先打开这份文档：[WORKFLOW\_SHOWCASE.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md)
+1. 先打开这份文档：[WORKFLOW\_SHOWCASE.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md)
 2. 再看论文阅读产物：
-   - [literature/geoagent2025\_framework.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/literature/geoagent2025_framework.md)
+   - [literature/geoagent2025\_framework.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/literature/geoagent2025_framework.md)
 3. 再打开 ideation 产物：
-   - [ideas/idea\_report.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/ideas/idea_report.md)
-   - [ideas/decision\_matrix.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/ideas/decision_matrix.md)
+   - [ideas/idea\_report.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/ideas/idea_report.md)
+   - [ideas/decision\_matrix.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/ideas/decision_matrix.md)
 3. 再看图和脚本：
-   - [figures/scripts/plot\_geoagent\_workflow\_showcase.py](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/figures/scripts/plot_geoagent_workflow_showcase.py)
-   - [figures/outputs/geoagent\_workflow\_showcase.png](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/figures/outputs/geoagent_workflow_showcase.png)
+   - [figures/scripts/plot\_geoagent\_workflow\_showcase.py](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/figures/scripts/plot_geoagent_workflow_showcase.py)
+   - [figures/outputs/geoagent\_workflow\_showcase.png](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/figures/outputs/geoagent_workflow_showcase.png)
 4. 最后看论文表达与 reviewer 收口：
-   - [paper/notes/figure\_caption\_cn.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/paper/notes/figure_caption_cn.md)
-   - [paper/notes/result\_analysis\_cn.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/paper/notes/result_analysis_cn.md)
-   - [paper/notes/reviewer\_check.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/paper/notes/reviewer_check.md)
+   - [paper/notes/figure\_caption\_cn.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/paper/notes/figure_caption_cn.md)
+   - [paper/notes/result\_analysis\_cn.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/paper/notes/result_analysis_cn.md)
+   - [paper/notes/reviewer\_check.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/paper/notes/reviewer_check.md)
 
 这样别人看到的就不是"一个仓库里有很多文件"，而是"这个仓库可以把一个项目从想法一路推到表达，并且中间每一步都有产物可落地"。

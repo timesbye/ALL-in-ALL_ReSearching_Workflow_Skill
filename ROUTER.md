@@ -1,8 +1,8 @@
-# ReSearching Figures Workflow Router
+# ALL-in-ALL ReSearching Workflow Skill Router
 
-[![GitHub](https://img.shields.io/badge/Github-timesbye%2FReSearching\_Figures\_Workflow-blue?logo=github)](https://github.com/timesbye/ReSearching_Figures_Workflow)
+[![GitHub](https://img.shields.io/badge/Github-timesbye%2FALL--in--ALL\_ReSearching\_Workflow\_Skill-blue?logo=github)](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill)
 
-> **项目定位**：通过引用已有前沿科研绘图和学术写作工具，并在此基础上构建原创 brainstorm 能力，整合为从论文阅读到论文表达的一体式 workflow。
+> **项目定位**：把散落在各处的好工具串到一起，补上缺失的关键环节，再让它们按正确顺序跑起来。核心是 Skill 整合概念，后续会根据开源项目进展及前沿方向持续更新。
 
 ## 1. Paper Reading Skill
 

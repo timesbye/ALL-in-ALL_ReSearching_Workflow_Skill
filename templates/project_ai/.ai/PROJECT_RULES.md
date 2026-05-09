@@ -2,7 +2,7 @@
 
 ## Project Identity
 
-This is a project using ReSearching_Figures_Workflow.
+This is a project using ALL-in-ALL_ReSearching_Workflow_Skill.
 
 Before starting any task, read:
 

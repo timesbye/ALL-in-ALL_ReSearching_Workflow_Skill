@@ -6,7 +6,7 @@
 
 ## 用途
 
-本目录作为 [ReSearching_Figures_Workflow](https://github.com/timesbye/ReSearching_Figures_Workflow) 的学术写作 Prompt 库入口。
+本目录作为 [ALL-in-ALL_ReSearching_Workflow_Skill](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill) 的学术写作 Prompt 库入口。
 
 当 Agent 需要执行学术写作、润色、翻译、实验分析或 reviewer 风格检查时，应参考上游仓库中的 Prompt 模板和 Agent Skills。
 

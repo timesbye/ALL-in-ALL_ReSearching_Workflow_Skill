@@ -12,7 +12,7 @@ description: >-
 
 # Scientific figure making
 
-> **设计灵感与参考来源**：本 Skill 的绘图风格和设计理论参考自 [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)（by [Chen Liu](https://chenliu-1996.github.io/)，Yale University）。本目录中的文档为 ReSearching_Figures_Workflow 项目基于其绘图范式编写的使用指南，不包含 figures4papers 的原始脚本代码。如需查看完整的绘图脚本和输出示例，请访问上游仓库。
+> **设计灵感与参考来源**：本 Skill 的绘图风格和设计理论参考自 [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)（by [Chen Liu](https://chenliu-1996.github.io/)，Yale University）。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其绘图范式编写的使用指南，不包含 figures4papers 的原始脚本代码。如需查看完整的绘图脚本和输出示例，请访问上游仓库。
 
 Open `references/` only as needed; do not preload every file. Start from the table below, then follow links inside the document you opened (and into `figure_*` code via [references/demos.md](references/demos.md)) instead of loading the full reference set up front.
 

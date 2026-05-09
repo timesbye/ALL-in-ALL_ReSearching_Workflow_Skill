@@ -5,7 +5,7 @@ description: Use for generating systematic literature reviews on a research topi
 
 # Literature Review
 
-> **设计灵感与参考来源**：本 Skill 的概念参考自 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License，AI 驱动的文献综述生成器）。本目录中的文档为 ReSearching_Figures_Workflow 项目基于其理念编写的使用指南，不包含 Auto-Scholar 的原始代码。
+> **设计灵感与参考来源**：本 Skill 的概念参考自 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License，AI 驱动的文献综述生成器）。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含 Auto-Scholar 的原始代码。
 
 Open `templates/` only as needed. Start from the workflow below.
 

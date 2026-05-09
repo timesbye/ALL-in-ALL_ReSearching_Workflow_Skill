@@ -5,7 +5,7 @@ description: Use for deep-reading a single research paper and generating structu
 
 # Paper Reading
 
-> **设计灵感与参考来源**：本 Skill 的概念参考自 [917Dhj/DeepPaperNote](https://github.com/917Dhj/DeepPaperNote)（Agent Skill 格式的论文深度阅读工具）。本目录中的文档为 ReSearching_Figures_Workflow 项目基于其理念编写的使用指南，不包含 DeepPaperNote 的原始内容。
+> **设计灵感与参考来源**：本 Skill 的概念参考自 [917Dhj/DeepPaperNote](https://github.com/917Dhj/DeepPaperNote)（Agent Skill 格式的论文深度阅读工具）。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含 DeepPaperNote 的原始内容。
 
 Open `templates/` only as needed. Start from the workflow below.
 

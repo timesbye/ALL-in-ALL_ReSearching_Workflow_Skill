@@ -1,10 +1,10 @@
 # 使用教程
 
-[![GitHub](https://img.shields.io/badge/Github-timesbye%2FReSearching\_Figures\_Workflow-blue?logo=github)](https://github.com/timesbye/ReSearching_Figures_Workflow)
+[![GitHub](https://img.shields.io/badge/Github-timesbye%2FALL--in--ALL\_ReSearching\_Workflow\_Skill-blue?logo=github)](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill)
 
-本文档给出从 [ReSearching_Figures_Workflow](https://github.com/timesbye/ReSearching_Figures_Workflow) 到实际科研项目的完整使用方式，并提供仓库内置示例项目的演示流程。
+本文档给出从 [ALL-in-ALL_ReSearching_Workflow_Skill](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill) 到实际科研项目的完整使用方式，并提供仓库内置示例项目的演示流程。
 
-> **项目定位**：ReSearching_Figures_Workflow 通过引用已有前沿科研绘图和学术写作工具，并在此基础上构建原创 brainstorm 能力，整合为从 ideation 到论文表达的一体式 workflow。
+> **项目定位**：ALL-in-ALL_ReSearching_Workflow_Skill 把散落在各处的好工具串到一起，补上缺失的关键环节，再让它们按正确顺序跑起来，整合为从 ideation 到论文表达的一体式 workflow。核心是 Skill 整合概念，后续会根据开源项目进展及前沿方向持续更新和替换。
 
 ## 1. 仓库用途
 
@@ -78,13 +78,13 @@ mkdir -p ~/Projects/My-Research-Project
 2. 复制模板：
 
 ```bash
-cp -r /path/to/ReSearching_Figures_Workflow/templates/project_ai/* ~/Projects/My-Research-Project/
+cp -r /path/to/ALL-in-ALL_ReSearching_Workflow_Skill/templates/project_ai/* ~/Projects/My-Research-Project/
 ```
 
 3. 连接 toolkit：
 
 ```bash
-/path/to/ReSearching_Figures_Workflow/scripts/link_to_project.sh ~/Projects/My-Research-Project
+/path/to/ALL-in-ALL_ReSearching_Workflow_Skill/scripts/link_to_project.sh ~/Projects/My-Research-Project
 ```
 
 4. 在 Agent 中先读取：
@@ -123,7 +123,7 @@ F:\AI-Research-Toolkit\scripts\link_to_project.ps1 -ProjectPath "F:\AI-Research-
 Linux / macOS / WSL：
 
 ```bash
-/path/to/ReSearching_Figures_Workflow/scripts/link_to_project.sh /path/to/ReSearching_Figures_Workflow/examples/GeoAgent-Thesis
+/path/to/ALL-in-ALL_ReSearching_Workflow_Skill/scripts/link_to_project.sh /path/to/ALL-in-ALL_ReSearching_Workflow_Skill/examples/GeoAgent-Thesis
 ```
 
 建立完成后，示例项目里会出现：

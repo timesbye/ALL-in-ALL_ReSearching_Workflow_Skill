@@ -5,7 +5,7 @@ description: Use for guided academic paper writing, section by section. This ski
 
 # Scholarly Writing
 
-> **设计灵感与参考来源**：本 Skill 的概念参考自 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly)（Agent Skill 格式的引导式论文写作工具）。本目录中的文档为 ReSearching_Figures_Workflow 项目基于其理念编写的使用指南，不包含 Scholarly 的原始内容。
+> **设计灵感与参考来源**：本 Skill 的概念参考自 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly)（Agent Skill 格式的引导式论文写作工具）。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含 Scholarly 的原始内容。
 
 Open `templates/` only as needed. Start from the workflow below.
 

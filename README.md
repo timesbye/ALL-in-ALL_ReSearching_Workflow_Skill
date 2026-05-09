@@ -1,23 +1,23 @@
-# ReSearching Figures Workflow
+# ALL-in-ALL ReSearching Workflow Skill
 
-[![GitHub](https://img.shields.io/badge/Github-timesbye%2FReSearching\_Figures\_Workflow-blue?logo=github)](https://github.com/timesbye/ReSearching_Figures_Workflow)
+[![GitHub](https://img.shields.io/badge/Github-timesbye%2FALL--in--ALL\_ReSearching\_Workflow\_Skill-blue?logo=github)](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**从论文阅读到论文表达的一体式科研 workflow。**
+**从论文阅读到论文表达的一体式科研 workflow skill 集合。**
 
-本项目通过引用已有前沿科研工具，并在此基础上构建原创 brainstorm 能力，将分散的科研能力整合为一个连续的、可追溯的工作流。
+本项目整合前沿开源科研工具的设计理念，构建原创 brainstorm 能力，将论文阅读、文献综述、选题、绘图、写作、润色、审稿检查等分散环节串联为一个连续的、可追溯的工作流。
 
-**GitHub 仓库**：[https://github.com/timesbye/ReSearching_Figures_Workflow](https://github.com/timesbye/ReSearching_Figures_Workflow)
+**GitHub 仓库**：[https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill)
 
 ## 项目定位
 
-ReSearching Figures Workflow 不是从零发明所有模块，而是做三件事：
+这个项目做的事情其实很简单——把散落在各处的好工具串到一起，补上缺失的关键环节，再让它们按正确顺序跑起来：
 
-1. **引用前沿科研工具**：引入论文阅读、文献综述、学术写作、科研绘图等领域的开源工具理念
-2. **构建原创 brainstorm 能力**：在此基础上开发 `critical-ideation` Skill——一个 Critic + Search + Ideation 型选题工具
-3. **整合为一体式 workflow**：通过路由规则、项目模板和产物目录，把论文阅读 → 文献综述 → 选题 → 绘图 → 写作 → reviewer 检查串成一个顺序依赖的连续工作流
+1. **引入已有的好工具**：论文阅读、文献综述、学术写作、科研绘图……这些领域已经有成熟的开源方案，我们直接引用它们的设计理念，不再重复造轮子
+2. **补上缺失的关键环节**：现有的工具链里，最缺的就是一个能主动质疑、检索已有方案、收敛到可执行方向的 brainstorm 能力——这就是我们原创的 `critical-ideation` Skill
+3. **让它们按正确顺序跑起来**：通过路由规则、项目模板和产物目录，把阅读 → 综述 → 选题 → 绘图 → 写作 → 润色 → 审稿检查串成一个顺序依赖的连续工作流
 
-核心价值：**把分散能力组织成一个能从论文阅读走到论文表达的连续生产链。**
+> **补充声明**：本项目的核心是 **Skill 整合概念**。各 Skill 均为 prompt 模块，后续会根据开源项目进展及前沿方向持续更新和替换，确保工作流始终与最新实践保持同步。
 
 ## 六类核心能力
 
@@ -47,7 +47,7 @@ paper-reading → literature-review → critical-ideation → scientific-figure-
 ## Repository Layout
 
 ```text
-ReSearching_Figures_Workflow/
+ALL-in-ALL_ReSearching_Workflow_Skill/
 |-- README.md
 |-- LICENSE
 |-- ROUTER.md
@@ -107,13 +107,13 @@ ReSearching_Figures_Workflow/
 - 仅润色/翻译：使用 `prompt-libraries/awesome-ai-research-writing/`
 - 完整流程：阅读 → 综述 → 选题 → 绘图 → 写作 → 润色 → reviewer 检查
 
-详见 [ROUTER.md](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/ROUTER.md)。
+详见 [ROUTER.md](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/ROUTER.md)。
 
 ## Example Project
 
 仓库内置了示例项目，展示完整 workflow：
 
-- [`examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md`](https://github.com/timesbye/ReSearching_Figures_Workflow/blob/main/examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md)
+- [`examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md`](https://github.com/timesbye/ALL-in-ALL_ReSearching_Workflow_Skill/blob/main/examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md)
 
 ## Third-Party Acknowledgments
 
