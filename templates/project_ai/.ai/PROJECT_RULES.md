@@ -2,7 +2,7 @@
 
 ## Project Identity
 
-This is a project using DION-AI-Research-Toolkit.
+This is a project using ReSearching_Figures_Workflow.
 
 Before starting any task, read:
 
@@ -18,9 +18,35 @@ The toolkit should be linked as:
 .ai/toolkit/
 ```
 
+## Paper Reading Rules
+
+For deep-reading a single paper and generating structured notes, use:
+
+```text
+.ai/toolkit/skills/paper-reading/
+```
+
+Save notes to `literature/`, e.g. `literature/[author_year_title].md`.
+
+## Literature Review Rules
+
+For systematic literature review on a research topic, use:
+
+```text
+.ai/toolkit/skills/literature-review/
+```
+
+Save reviews to `literature/`, e.g. `literature/review_[topic].md`.
+
 ## Writing Rules
 
-For academic writing, polishing, translation, experiment analysis, and reviewer-style critique, use:
+For building a paper from scratch, section by section, use:
+
+```text
+.ai/toolkit/skills/scholarly-writing/
+```
+
+For polishing, translating, or refining existing text, use:
 
 ```text
 .ai/toolkit/prompt-libraries/awesome-ai-research-writing/
@@ -74,26 +100,17 @@ Generated ideation outputs should be saved to `ideas/`, preferably:
 - `ideas/decision_matrix.md`
 - `ideas/mvp_plan.md`
 
-## Mixed Task Workflow
+## Full Workflow
 
-For figure + paper writing tasks:
+For going from zero to a complete paper:
 
-1. Read project data from `data/`.
-2. Generate plotting script.
-3. Save figure outputs.
-4. Draft figure caption.
-5. Polish caption using academic writing prompts.
-6. Write result analysis paragraph.
-7. Check whether the figure supports the stated claim.
-
-For ideation tasks:
-
-1. Frame the problem clearly.
-2. Generate multiple candidate ideas.
-3. Critique them aggressively.
-4. Search for close existing work when current context matters.
-5. Refine and rank the ideas.
-6. Save the results into `ideas/`.
+1. Use `paper-reading` to read key papers → save notes to `literature/`
+2. Use `literature-review` to survey the field → save review to `literature/`
+3. Use `critical-ideation` to converge on a direction → save to `ideas/`
+4. Use `scientific-figure-making` to visualize evidence → save to `figures/`
+5. Use `scholarly-writing` to draft the paper → save to `paper/`
+6. Use `awesome-ai-research-writing` to polish → update `paper/`
+7. Use reviewer-style critique to check claims → save to `paper/notes/`
 
 ## Important Rule
 

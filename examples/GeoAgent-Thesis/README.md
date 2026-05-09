@@ -12,6 +12,8 @@
   项目级 AI 规则。
 - `.ai/TASK_TEMPLATE.md`
   任务模板。
+- `literature/`
+  论文阅读笔记和文献综述。
 - `data/results.csv`
   样例实验数据。
 - `paper/context.md`

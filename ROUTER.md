@@ -2,83 +2,45 @@
 
 [![GitHub](https://img.shields.io/badge/Github-timesbye%2FReSearching\_Figures\_Workflow-blue?logo=github)](https://github.com/timesbye/ReSearching_Figures_Workflow)
 
-> **项目定位**：通过引用已有前沿科研绘图和学术写作工具，并在此基础上构建原创 brainstorm 能力，整合为从 ideation 到论文表达的一体式 workflow。
+> **项目定位**：通过引用已有前沿科研绘图和学术写作工具，并在此基础上构建原创 brainstorm 能力，整合为从论文阅读到论文表达的一体式 workflow。
 
-## 1. Academic Writing Prompt Library
+## 1. Paper Reading Skill
 
-> 来源：引用 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+> 来源：参考 [917Dhj/DeepPaperNote](https://github.com/917Dhj/DeepPaperNote) 论文深度阅读理念，本项目编写使用指南
 
 Path:
 
 ```text
-prompt-libraries/awesome-ai-research-writing/
+skills/paper-reading/
 ```
 
 Use for:
 
-- Chinese academic polishing
-- English academic polishing
-- Chinese-to-English academic translation
-- English-to-Chinese academic translation
-- abstract writing
-- introduction rewriting
-- related work organization
-- experiment analysis
-- reviewer-style critique
-- AI-tone reduction
-- logical coherence checking
-
-Rules:
-
-- Preserve technical meaning.
-- Do not invent results, citations, or experimental claims.
-- Use formal academic language.
-- Avoid exaggerated contribution statements.
-- Keep terminology consistent with the target project.
+- deep-reading a single research paper
+- generating structured research notes
+- extracting key contributions and methodology
+- identifying limitations and open questions
+- connecting a paper to the user's own work
 
 ---
 
-## 2. Scientific Figure Making Skill
+## 2. Literature Review Skill
 
-> 来源：参考 [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) 绘图范式，本项目编写使用指南
+> 来源：参考 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License）文献综述自动化理念，本项目编写使用指南
 
 Path:
 
 ```text
-skills/scientific-figure-making/
+skills/literature-review/
 ```
-
-Important files:
-
-- `SKILL.md`
-- `references/api.md`
-- `references/design-theory.md`
-- `references/common-patterns.md`
-- `references/demos.md`
-- `references/tutorials.md`
 
 Use for:
 
-- publication-quality scientific figures
-- matplotlib scripts
-- bar plots
-- line plots
-- radar plots
-- ablation figures
-- comparison figures
-- heatmaps
-- multi-panel figures
-- exporting PDF and PNG
-
-Rules:
-
-- Generate reproducible Python scripts.
-- Save scripts to the target project's `figures/scripts/`.
-- Save outputs to the target project's `figures/outputs/`.
-- Export both PDF and PNG.
-- Use readable axis labels, legends, and captions.
-- Prefer clean academic style.
-- Do not use decorative or marketing-style charts.
+- systematic literature review on a research topic
+- surveying existing work
+- writing a related work section
+- identifying research gaps
+- finding and organizing relevant papers
 
 ---
 
@@ -116,94 +78,175 @@ Workflow:
 6. Rank ideas by novelty, feasibility, user value, differentiation, demonstrability, and fit.
 7. Recommend only the ideas worth building.
 
-Do not use this skill for normal paper polishing, translation, figure generation, or deterministic coding tasks.
-
 ---
 
-## 4. Combined Workflows
+## 4. Scientific Figure Making Skill
 
-### Figure + Writing
+> 来源：参考 [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers) 绘图范式，本项目编写使用指南
 
-When a task involves both experimental visualization and paper writing:
-
-1. Use `scientific-figure-making` to design and generate the figure.
-2. Save the plotting script into the target project.
-3. Save PDF and PNG outputs into the target project.
-4. Draft the figure caption.
-5. Use `awesome-ai-research-writing` to polish the caption.
-6. Write a thesis-style or paper-style result analysis paragraph.
-7. Use reviewer-style critique to check whether the figure supports the stated claim.
-
-### Ideation + Writing
-
-When a task involves idea generation and formal writing:
-
-1. Use `critical-ideation` to generate, challenge, search, refine, and rank ideas.
-2. Save the ideation outputs to the target project's `ideas/`.
-3. Use `awesome-ai-research-writing` to turn the selected idea into a proposal, PRD, README, or paper section.
-
-### Ideation + Figure + Writing
-
-When a task involves experiment design or benchmark planning:
-
-1. Use `critical-ideation` to define the right experimental question and shortlist feasible directions.
-2. Use `scientific-figure-making` to visualize results or benchmark comparisons.
-3. Use `awesome-ai-research-writing` to write figure captions and result analysis.
-
----
-
-## 5. Routing Rules
-
-If the task is mainly about writing, translation, polishing, summarization, or review:
-
-Use:
-
-```text
-prompt-libraries/awesome-ai-research-writing/
-```
-
-If the task is mainly about plotting, visualization, or chart design:
-
-Use:
+Path:
 
 ```text
 skills/scientific-figure-making/
 ```
 
-If the task is mainly about brainstorming, idea validation, novelty checks, project differentiation, or competitor-aware ideation:
+Use for:
 
-Use:
+- publication-quality scientific figures
+- matplotlib scripts
+- bar plots, line plots, radar plots
+- ablation figures, comparison figures, heatmaps
+- multi-panel figures
+- exporting PDF and PNG
+
+Rules:
+
+- Generate reproducible Python scripts.
+- Save scripts to the target project's `figures/scripts/`.
+- Save outputs to the target project's `figures/outputs/`.
+- Export both PDF and PNG.
+- Use readable axis labels, legends, and captions.
+- Prefer clean academic style.
+
+---
+
+## 5. Scholarly Writing Skill
+
+> 来源：参考 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly) 引导式论文写作理念，本项目编写使用指南
+
+Path:
+
+```text
+skills/scholarly-writing/
+```
+
+Use for:
+
+- writing a paper from scratch, section by section
+- building paper structure and skeleton
+- guided abstract, introduction, method, results, discussion writing
+- thesis writing guidance
+
+Relationship to `awesome-ai-research-writing`:
+
+- `scholarly-writing`: Builds the paper skeleton (from zero to first draft)
+- `awesome-ai-research-writing`: Polishes existing text (from draft to publication-ready)
+
+---
+
+## 6. Academic Writing Prompt Library
+
+> 来源：引用 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)
+
+Path:
+
+```text
+prompt-libraries/awesome-ai-research-writing/
+```
+
+Use for:
+
+- Chinese academic polishing
+- English academic polishing
+- Chinese-to-English academic translation
+- English-to-Chinese academic translation
+- experiment analysis
+- reviewer-style critique
+- AI-tone reduction
+- logical coherence checking
+
+Rules:
+
+- Preserve technical meaning.
+- Do not invent results, citations, or experimental claims.
+- Use formal academic language.
+- Avoid exaggerated contribution statements.
+
+---
+
+## 7. Full Workflow
+
+The complete workflow chain from reading to writing:
+
+```text
+paper-reading → literature-review → critical-ideation → scientific-figure-making → scholarly-writing + awesome-ai-research-writing → reviewer check
+```
+
+### Full Pipeline
+
+When a user wants to go from zero to a complete paper:
+
+1. Use `paper-reading` to deeply read key papers and generate notes.
+2. Use `literature-review` to survey the field and identify gaps.
+3. Use `critical-ideation` to generate, challenge, and converge on a research direction.
+4. Use `scientific-figure-making` to visualize experimental evidence.
+5. Use `scholarly-writing` to build the paper structure and draft each section.
+6. Use `awesome-ai-research-writing` to polish the draft.
+7. Use reviewer-style critique to check whether claims match evidence.
+
+### Partial Pipelines
+
+**Reading + Ideation** (no writing yet):
+
+```text
+paper-reading -> literature-review -> critical-ideation
+```
+
+**Figure + Writing** (already have results):
+
+```text
+scientific-figure-making -> scholarly-writing -> awesome-ai-research-writing -> reviewer check
+```
+
+**Ideation + Writing** (already have a direction):
+
+```text
+critical-ideation -> scholarly-writing -> awesome-ai-research-writing
+```
+
+---
+
+## 8. Routing Rules
+
+If the task is mainly about reading and understanding papers:
+
+```text
+skills/paper-reading/
+```
+
+If the task is mainly about surveying a research area:
+
+```text
+skills/literature-review/
+```
+
+If the task is mainly about brainstorming, idea validation, or novelty checks:
 
 ```text
 skills/critical-ideation/
 ```
 
-If the task is about both figure generation and experiment analysis:
-
-Use both, in this order:
+If the task is mainly about plotting or visualization:
 
 ```text
-scientific-figure-making
--> caption draft
--> awesome-ai-research-writing
--> result analysis
--> reviewer check
+skills/scientific-figure-making/
 ```
 
-If the task is about both ideation and formal writing:
-
-Use both, in this order:
+If the task is mainly about writing a paper from scratch:
 
 ```text
-critical-ideation
--> shortlist and MVP
--> awesome-ai-research-writing
--> proposal / PRD / introduction
+skills/scholarly-writing/
+```
+
+If the task is mainly about polishing, translating, or refining existing text:
+
+```text
+prompt-libraries/awesome-ai-research-writing/
 ```
 
 ---
 
-## 6. Important Safety Rule
+## 9. Important Safety Rule
 
 Do not modify toolkit source files unless the user explicitly asks to update the toolkit itself.
 

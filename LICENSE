@@ -45,3 +45,30 @@ The licenses of those projects apply to their respective contents.
   original usage guides and design references inspired by figures4papers.
   It does not include the original Python scripts or figure outputs from figures4papers.
   Users should visit the upstream repository for full scripts and demos.
+
+### DeepPaperNote
+
+- Repository: https://github.com/917Dhj/DeepPaperNote
+- Author: 917Dhj
+- License: No explicit license (GitHub public repository, All Rights Reserved by default)
+- Usage in this project: The `skills/paper-reading/` directory contains original usage
+  guides inspired by DeepPaperNote's concept of deep-reading papers and generating
+  structured research notes. It does not include DeepPaperNote's original content.
+
+### Auto-Scholar
+
+- Repository: https://github.com/CAICAIIs/Auto-Scholar
+- Author: CAICAIIs
+- License: MIT License
+- Usage in this project: The `skills/literature-review/` directory contains original
+  usage guides inspired by Auto-Scholar's concept of AI-powered literature review
+  generation. It does not include Auto-Scholar's original code.
+
+### Scholarly
+
+- Repository: https://github.com/ShiyangZheng/scholarly
+- Author: ShiyangZheng
+- License: No explicit license (GitHub public repository, All Rights Reserved by default)
+- Usage in this project: The `skills/scholarly-writing/` directory contains original
+  usage guides inspired by Scholarly's concept of guided section-by-section academic
+  paper writing. It does not include Scholarly's original content.
