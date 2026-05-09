@@ -1,16 +1,18 @@
 # GeoAgent Workflow Showcase
 
-这份示例不是在展示“某一个单点能力有多强”，而是在展示这个仓库如何把外部引用能力和我们自己的项目规则整合成一个可复用 workflow。
+[![Toolkit](https://img.shields.io/badge/Toolkit-DION--AI--Research--Toolkit-blue?logo=github)](https://github.com/timesbye/DION-AI-Research-Toolkit)
+
+这份示例不是在展示"某一个单点能力有多强"，而是在展示 [DION-AI-Research-Toolkit](https://github.com/timesbye/DION-AI-Research-Toolkit) 如何把外部引用能力和我们自己的项目规则整合成一个可复用 workflow。
 
 这里的关键不是声称我们发明了所有模块，而是：
 
-- 引入 `awesome-ai-research-writing` 作为学术写作 Prompt 库
-- 引入 `figures4papers` 中的 `scientific-figure-making` 作为科研绘图 Skill
-- 在此基础上补上我们自己的 `critical-ideation`、路由规则、项目模板、产物目录和顺序调用方式
+- 引入 [`awesome-ai-research-writing`](https://github.com/Leey21/awesome-ai-research-writing) 作为学术写作 Prompt 库
+- 引入 [`figures4papers`](https://github.com/ChenLiu-1996/figures4papers) 中的 `scientific-figure-making` 作为科研绘图 Skill
+- 在此基础上补上我们自己的 [`critical-ideation`](https://github.com/timesbye/DION-AI-Research-Toolkit/tree/main/skills/critical-ideation)、路由规则、项目模板、产物目录和顺序调用方式
 
 换句话说，这个仓库的价值在于 **把分散能力组织成一个能从想法走到图表、再走到论文表达的连续工作流**。
 
----
+***
 
 ## 故事起点
 
@@ -33,7 +35,7 @@
 
 这正是 workflow 应该解决的问题。
 
----
+***
 
 ## 第一幕：先做 Ideation，不急着画图
 
@@ -48,11 +50,11 @@
 paper/context.md
 ```
 
-然后执行任务模板：[ideas/demo_ideation_task.md](ideas/demo_ideation_task.md)
+然后执行任务模板：[ideas/demo\_ideation\_task.md](ideas/demo_ideation_task.md)
 
 ### 这一步为什么重要
 
-很多项目一上来就开始画图、写段落，最后发现核心方向根本没收敛。  
+很多项目一上来就开始画图、写段落，最后发现核心方向根本没收敛。\
 我们这里先用 `critical-ideation` 做三件事：
 
 1. 把问题 framing 清楚
@@ -63,16 +65,16 @@ paper/context.md
 
 产物已经保存到：
 
-- [ideas/idea_report.md](ideas/idea_report.md)
-- [ideas/search_log.md](ideas/search_log.md)
-- [ideas/decision_matrix.md](ideas/decision_matrix.md)
-- [ideas/mvp_plan.md](ideas/mvp_plan.md)
+- [ideas/idea\_report.md](ideas/idea_report.md)
+- [ideas/search\_log.md](ideas/search_log.md)
+- [ideas/decision\_matrix.md](ideas/decision_matrix.md)
+- [ideas/mvp\_plan.md](ideas/mvp_plan.md)
 
 ### 核心结论
 
 这轮 ideation 没有把“GeoAgent 做成一个更大的万能系统”当成答案，而是收敛出了一个更可执行的方向：
 
-**Top 1: `GeoAgent-Router`**
+**Top 1:** **`GeoAgent-Router`**
 
 它的意思不是空泛地说“我们再加一个 Agent”，而是明确提出：
 
@@ -80,10 +82,10 @@ paper/context.md
 - 下一步值得做的是预算感知的变体选择或路由策略
 - 这个方向能直接连接到现有数据、图表和 MVP
 
-这就是 workflow 的第一层价值：  
+这就是 workflow 的第一层价值：\
 **先决定什么值得画、什么值得写，而不是先画再找故事。**
 
----
+***
 
 ## 第二幕：把方向变成图，而不是停留在想法
 
@@ -103,12 +105,12 @@ data/results.csv
 
 然后使用本地绘图脚本：
 
-- [figures/scripts/plot_geoagent_workflow_showcase.py](figures/scripts/plot_geoagent_workflow_showcase.py)
+- [figures/scripts/plot\_geoagent\_workflow\_showcase.py](figures/scripts/plot_geoagent_workflow_showcase.py)
 
 ### 产物位置
 
-- [figures/outputs/geoagent_workflow_showcase.png](figures/outputs/geoagent_workflow_showcase.png)
-- [figures/outputs/geoagent_workflow_showcase.pdf](figures/outputs/geoagent_workflow_showcase.pdf)
+- [figures/outputs/geoagent\_workflow\_showcase.png](figures/outputs/geoagent_workflow_showcase.png)
+- [figures/outputs/geoagent\_workflow\_showcase.pdf](figures/outputs/geoagent_workflow_showcase.pdf)
 
 ### 结果展示
 
@@ -121,12 +123,12 @@ data/results.csv
 1. `GeoAgent` 系列在 Accuracy 和 F1 上持续优于两个基线方法
 2. 性能提升伴随着逐步增加的推理延迟，因此存在明确的 quality-latency frontier
 
-这一步的 workflow 价值是：  
+这一步的 workflow 价值是：\
 **把 ideation 阶段收敛出的方向，转成一个能被肉眼直接理解的证据对象。**
 
 换句话说，第一幕给出“接下来最值得推进什么”，第二幕回答“现有证据能不能把这个方向讲出来”。
 
----
+***
 
 ## 第三幕：把图变成论文表达
 
@@ -151,9 +153,9 @@ paper/context.md
 
 ### 产物位置
 
-- [paper/notes/figure_caption_cn.md](paper/notes/figure_caption_cn.md)
-- [paper/notes/figure_caption_en.md](paper/notes/figure_caption_en.md)
-- [paper/notes/result_analysis_cn.md](paper/notes/result_analysis_cn.md)
+- [paper/notes/figure\_caption\_cn.md](paper/notes/figure_caption_cn.md)
+- [paper/notes/figure\_caption\_en.md](paper/notes/figure_caption_en.md)
+- [paper/notes/result\_analysis\_cn.md](paper/notes/result_analysis_cn.md)
 
 ### 结果示例
 
@@ -167,17 +169,17 @@ paper/context.md
 
 ### 这一步为什么不是“可有可无”
 
-如果没有这一步，很多项目会停在“我有图，但我不会把图写成论文语言”。  
+如果没有这一步，很多项目会停在“我有图，但我不会把图写成论文语言”。\
 我们的 workflow 不把写作当成独立末端，而是把它接在图表之后，让表达自动继承前面已经收敛好的 claim 边界。
 
-这一步的 workflow 价值是：  
+这一步的 workflow 价值是：\
 **同一份数据、同一张图，被整理成可以直接进入论文上下文的语言产物。**
 
----
+***
 
 ## 第四幕：最后再让 Reviewer 来拆台
 
-如果到这里就结束，最常见的问题是过度声称。  
+如果到这里就结束，最常见的问题是过度声称。\
 因此 workflow 的最后一步不是庆祝，而是反过来质疑自己。
 
 ### 调用顺序
@@ -186,7 +188,7 @@ paper/context.md
 
 ### 产物位置
 
-- [paper/notes/reviewer_check.md](paper/notes/reviewer_check.md)
+- [paper/notes/reviewer\_check.md](paper/notes/reviewer_check.md)
 
 ### Reviewer 给出的关键反馈
 
@@ -213,19 +215,19 @@ paper/context.md
 
 这正是高质量 workflow 和普通拼接流程的区别。
 
----
+***
 
 ## 最终串起来看，这个 workflow 做了什么
 
 按顺序回看：
 
-1. `critical-ideation`  
+1. `critical-ideation`\
    先筛方向，不让项目在错误的 idea 上浪费时间
-2. `scientific-figure-making`  
+2. `scientific-figure-making`\
    把方向绑定到可见证据，而不是抽象口号
-3. `awesome-ai-research-writing`  
+3. `awesome-ai-research-writing`\
    把图表结果整理成论文级表达
-4. `reviewer_check`  
+4. `reviewer_check`\
    防止过度 claim，逼着结论回到证据边界内
 
 这不是四个功能的并排陈列，而是一个顺序依赖的链条：
@@ -239,7 +241,7 @@ idea
 -> final claim
 ```
 
----
+***
 
 ## 这个示例真正展示的，不是“某个文件”，而是“我们的 workflow 能力”
 
@@ -257,22 +259,22 @@ idea
 - 学术表达与 reviewer 检查在 `paper/notes/`
 - 整体讲解就在这份文档里
 
----
+***
 
 ## 建议的演示顺序
 
-实际给别人做演示时，按下面顺序最清楚：
+实际演示时，按下面顺序最清楚：
 
-1. 先打开这份文档：[WORKFLOW_SHOWCASE.md](WORKFLOW_SHOWCASE.md)
+1. 先打开这份文档：[WORKFLOW\_SHOWCASE.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md)
 2. 再打开 ideation 产物：
-   - [ideas/idea_report.md](ideas/idea_report.md)
-   - [ideas/decision_matrix.md](ideas/decision_matrix.md)
+   - [ideas/idea\_report.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/ideas/idea_report.md)
+   - [ideas/decision\_matrix.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/ideas/decision_matrix.md)
 3. 再看图和脚本：
-   - [figures/scripts/plot_geoagent_workflow_showcase.py](figures/scripts/plot_geoagent_workflow_showcase.py)
-   - [figures/outputs/geoagent_workflow_showcase.png](figures/outputs/geoagent_workflow_showcase.png)
+   - [figures/scripts/plot\_geoagent\_workflow\_showcase.py](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/figures/scripts/plot_geoagent_workflow_showcase.py)
+   - [figures/outputs/geoagent\_workflow\_showcase.png](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/figures/outputs/geoagent_workflow_showcase.png)
 4. 最后看论文表达与 reviewer 收口：
-   - [paper/notes/figure_caption_cn.md](paper/notes/figure_caption_cn.md)
-   - [paper/notes/result_analysis_cn.md](paper/notes/result_analysis_cn.md)
-   - [paper/notes/reviewer_check.md](paper/notes/reviewer_check.md)
+   - [paper/notes/figure\_caption\_cn.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/paper/notes/figure_caption_cn.md)
+   - [paper/notes/result\_analysis\_cn.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/paper/notes/result_analysis_cn.md)
+   - [paper/notes/reviewer\_check.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/paper/notes/reviewer_check.md)
 
 这样别人看到的就不是“一个仓库里有很多文件”，而是“这个仓库可以把一个项目从想法一路推到表达，并且中间每一步都有产物可落地”。

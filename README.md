@@ -1,14 +1,20 @@
 # DION AI Research Toolkit
 
+[![GitHub](https://img.shields.io/badge/Github-timesbye%2FDION--AI--Research--Toolkit-blue?logo=github)](https://github.com/timesbye/DION-AI-Research-Toolkit)
+
 一个面向科研写作、论文绘图和高质量 ideation 的可复用工具仓库。
+
+**GitHub 仓库**：[https://github.com/timesbye/DION-AI-Research-Toolkit](https://github.com/timesbye/DION-AI-Research-Toolkit)
 
 这个仓库把三类能力组织到同一个稳定入口下：
 
-- `prompt-libraries/awesome-ai-research-writing/`
+- [`prompt-libraries/awesome-ai-research-writing/`](https://github.com/timesbye/DION-AI-Research-Toolkit/tree/main/prompt-libraries/awesome-ai-research-writing)
   用于学术写作、润色、翻译、实验分析和 reviewer 风格检查。
-- `skills/scientific-figure-making/`
+  （上游来源：[Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing)）
+- [`skills/scientific-figure-making/`](https://github.com/timesbye/DION-AI-Research-Toolkit/tree/main/skills/scientific-figure-making)
   用于生成论文级 matplotlib 科研图、导出 PDF/PNG，并沉淀可复现脚本。
-- `skills/critical-ideation/`
+  （上游来源：[ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)）
+- [`skills/critical-ideation/`](https://github.com/timesbye/DION-AI-Research-Toolkit/tree/main/skills/critical-ideation)
   用于 brainstorm、主动质疑、竞品 / 论文 / GitHub 检索、方向重构、排序和 MVP 收敛。
 
 仓库目标：
@@ -23,8 +29,10 @@
 ```text
 DION-AI-Research-Toolkit/
 |-- README.md
-|-- BUILD.md
-|-- BUILD_skill3.md
+|-- Build/
+|   |-- BUILD.md
+|   |-- BUILD_skill3.md
+|   `-- README.md
 |-- ROUTER.md
 |-- docs/
 |   `-- USAGE.md
@@ -130,7 +138,7 @@ Copy-Item -Recurse .\templates\project_ai\* D:\Projects\My-Research-Project\
 - ideation + proposal / PRD / paper introduction 联合任务：
   先用 `critical-ideation` 生成并筛选方向，再用写作 prompt 库写成正式文本。
 
-详见 [ROUTER.md](ROUTER.md) 与 `prompts/` 目录中的入口文档。
+详见 [ROUTER.md](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/ROUTER.md) 与 `prompts/` 目录中的入口文档。
 
 ## Example Project
 
@@ -149,18 +157,18 @@ examples/GeoAgent-Thesis/
 
 如果你要直接展示这个仓库的整合 workflow，而不是单个 skill，优先阅读：
 
-- `examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md`
+- [`examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md`](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/WORKFLOW_SHOWCASE.md)
 
 建议先阅读：
 
-- `examples/GeoAgent-Thesis/README.md`
-- `docs/USAGE.md`
+- [`examples/GeoAgent-Thesis/README.md`](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/examples/GeoAgent-Thesis/README.md)
+- [`docs/USAGE.md`](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/docs/USAGE.md)
 
 ## Usage Guide
 
 完整教程见：
 
-- `docs/USAGE.md`
+- [`docs/USAGE.md`](https://github.com/timesbye/DION-AI-Research-Toolkit/blob/main/docs/USAGE.md)
 
 其中包含：
 

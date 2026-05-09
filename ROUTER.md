@@ -1,5 +1,7 @@
 # DION AI Research Toolkit Router
 
+[![GitHub](https://img.shields.io/badge/Github-timesbye%2FDION--AI--Research--Toolkit-blue?logo=github)](https://github.com/timesbye/DION-AI-Research-Toolkit)
+
 ## 1. Academic Writing Prompt Library
 
 Path:

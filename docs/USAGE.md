@@ -1,6 +1,8 @@
 # 使用教程
 
-本文档给出从工具仓库到实际科研项目的完整使用方式，并提供仓库内置示例项目的演示流程。
+[![GitHub](https://img.shields.io/badge/Github-timesbye%2FDION--AI--Research--Toolkit-blue?logo=github)](https://github.com/timesbye/DION-AI-Research-Toolkit)
+
+本文档给出从 [DION-AI-Research-Toolkit](https://github.com/timesbye/DION-AI-Research-Toolkit) 到实际科研项目的完整使用方式，并提供仓库内置示例项目的演示流程。
 
 ## 1. 仓库用途
 
