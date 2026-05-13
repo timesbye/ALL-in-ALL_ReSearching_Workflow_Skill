@@ -54,6 +54,8 @@ ALL-in-ALL_ReSearching_Workflow_Skill/
 |-- README.md
 |-- LICENSE
 |-- ROUTER.md
+|-- cli.py                            (交互式 CLI 入口)
+|-- DEPENDENCIES.md                   (上游依赖声明)
 |-- docs/
 |   `-- USAGE.md
 |-- prompt-libraries/
@@ -87,6 +89,21 @@ ALL-in-ALL_ReSearching_Workflow_Skill/
 ```
 
 ## Quick Start
+
+### 方式一：交互式 CLI / Interactive CLI
+
+```bash
+python cli.py
+```
+
+启动后可选择：
+- **完整 Workflow**：文献综述 → 论文阅读 → 选题构思 → 实验设计 → 绘图 → 写作 → 润色 → 审稿检查
+- **Idea Brainstorm**：与 Critical Ideation Skill 对质，可联动文献综述、论文阅读、实验设计
+- **Paper Writing**：科研绘图 + 引导式论文写作 + 学术润色 + 审稿检查
+
+CLI 会根据选择自动生成任务提示，复制到 Trae / Codex 中执行即可。
+
+### 方式二：手动配置
 
 1. 复制模板到你的科研项目目录。
 2. 通过 `scripts/link_to_project.ps1` 或 `scripts/link_to_project.sh` 把本仓库链接到目标项目的 `.ai/toolkit/`。
