@@ -6,7 +6,7 @@
 
 ## 1. Literature Review Skill
 
-> 来源：参考 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License）文献综述自动化理念；v4 引用验证参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，期刊质量排序参考 [Paperguide.ai](https://paperguide.ai/)，Workbooks 提取参考 Paperguide.ai
+> 来源：参考 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License）文献综述自动化理念；v4 引用验证参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，期刊质量排序参考 [Paperguide.ai](https://paperguide.ai/)，Workbooks 提取参考 Paperguide.ai，合规检查参考 [ARS](https://github.com/Imbad0202/academic-research-skills)
 
 Path:
 
@@ -24,6 +24,7 @@ Use for:
 - citation verification (v4)
 - journal quality ranking with SJR/SNIP (v4)
 - multi-paper structured data extraction / Workbooks mode (v4)
+- systematic review compliance check / PRISMA-trAIce (v4)
 
 ---
 
@@ -49,7 +50,7 @@ Use for:
 
 ## 3. Critical Ideation Skill
 
-> 来源：**本项目原创**；v4 辩论机制参考 [Google AI Co-Scientist](https://arxiv.org/abs/2502.18864) 的 Generate-Debate-Evolve 循环
+> 来源：**本项目原创**；v4 辩论机制参考 [Google AI Co-Scientist](https://arxiv.org/abs/2502.18864) 的 Generate-Debate-Evolve 循环；五维构思框架参考 [Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills)
 
 Path:
 
@@ -148,7 +149,7 @@ Rules:
 
 ## 6. Scholarly Writing Skill
 
-> 来源：参考 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly) 引导式论文写作理念；v4 结构化 JSON 大纲参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，引用接地参考 [LiRA](https://arxiv.org/abs/2510.05138)，并行写作参考 [AutoSurvey2](https://arxiv.org/abs/2510.26012)
+> 来源：参考 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly) 引导式论文写作理念；v4 结构化 JSON 大纲参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，引用接地参考 [LiRA](https://arxiv.org/abs/2510.05138)，并行写作参考 [AutoSurvey2](https://arxiv.org/abs/2510.26012)，风格校准和 Material Passport 参考 [ARS](https://github.com/Imbad0202/academic-research-skills)，Introduction Flowchart 参考 [Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills)
 
 Path:
 
@@ -165,6 +166,9 @@ Use for:
 - structured JSON outline with visualization plan and literature strategy (v4)
 - citation grounding verification (v4)
 - parallel section writing mode (v4)
+- style calibration (v4)
+- material passport / content provenance tracking (v4)
+- introduction flowchart model (v4)
 
 Relationship to `awesome-ai-research-writing`:
 
@@ -263,24 +267,24 @@ literature-review → paper-reading → critical-ideation → experiment-design 
 
 Each skill's internal workflow has been enhanced in v4:
 
-- `literature-review`: + citation verification + journal quality ranking + Workbooks mode
-- `critical-ideation`: + Generate-Debate-Evolve cycle
+- `literature-review`: + citation verification + journal quality ranking + Workbooks mode + compliance check
+- `critical-ideation`: + Generate-Debate-Evolve cycle + five-dimension framework
 - `scientific-figure-making`: + VLM review loop + concept diagram generation
-- `scholarly-writing`: + structured JSON outline + citation grounding + parallel writing
-- `reviewer_check`: + multi-perspective review + review-rollback mechanism
+- `scholarly-writing`: + structured JSON outline + citation grounding + parallel writing + style calibration + material passport + introduction flowchart
+- `reviewer_check`: + multi-perspective review + review-rollback mechanism + integrity gate + anti-flattery protocol
 
 ### Full Pipeline
 
 When a user wants to go from zero to a complete paper:
 
-1. Use `literature-review` to survey the field and identify gaps (with citation verification and quality ranking).
+1. Use `literature-review` to survey the field and identify gaps (with citation verification, quality ranking, and compliance check).
 2. Use `paper-reading` to deeply read key papers and generate notes.
-3. Use `critical-ideation` to generate, challenge, debate, and converge on a research direction.
+3. Use `critical-ideation` to generate, challenge, debate, and converge on a research direction (with five-dimension framework).
 4. Use `experiment-design` to plan experiments, define variables, and design ablation studies.
 5. Use `scientific-figure-making` to visualize experimental evidence (with VLM quality review).
-6. Use `scholarly-writing` to build the paper structure (with JSON outline and citation grounding) and draft each section.
+6. Use `scholarly-writing` to build the paper structure (with JSON outline, citation grounding, style calibration, material passport, and introduction flowchart) and draft each section.
 7. Use `awesome-ai-research-writing` to polish the draft.
-8. Use `reviewer_check` to run multi-perspective review with rollback mechanism.
+8. Use `reviewer_check` to run multi-perspective review with rollback mechanism, integrity gate, and anti-flattery protocol.
 
 ### Deep Research Pipeline (v4 new)
 

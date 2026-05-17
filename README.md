@@ -23,12 +23,12 @@
 
 | 能力 | 来源 | 用途 |
 |------|------|------|
-| 文献综述 Skill | 参考 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar) (MIT)；v4 引用验证参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，期刊质量排序参考 [Paperguide.ai](https://paperguide.ai/) | 系统性文献综述、引用验证、期刊质量排序、多论文数据提取 |
+| 文献综述 Skill | 参考 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar) (MIT)；v4 引用验证参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，期刊质量排序参考 [Paperguide.ai](https://paperguide.ai/)，合规检查参考 [ARS](https://github.com/Imbad0202/academic-research-skills) | 系统性文献综述、引用验证、期刊质量排序、多论文数据提取、系统综述合规检查 |
 | 论文阅读 Skill | 参考 [917Dhj/DeepPaperNote](https://github.com/917Dhj/DeepPaperNote) | 深度阅读单篇论文、生成结构化研究笔记 |
-| Critical Ideation Skill | **本项目原创**；v4 辩论机制参考 [Google AI Co-Scientist](https://arxiv.org/abs/2502.18864) | brainstorm、主动质疑、正反辩论、竞品检索、方向重构、MVP 收敛 |
+| Critical Ideation Skill | **本项目原创**；v4 辩论机制参考 [Google AI Co-Scientist](https://arxiv.org/abs/2502.18864)，五维构思框架参考 [Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | brainstorm、主动质疑、正反辩论、竞品检索、方向重构、MVP 收敛、五维构思 |
 | 实验设计 Skill | 参考 [wjgoarxiv/autoresearch-skill](https://github.com/wjgoarxiv/autoresearch-skill) (MIT) | 实验方案设计、变量控制、消融实验规划 |
 | 科研绘图 Skill | 参考 [ChenLiu-1996/figures4papers](https://github.com/ChenLiu-1996/figures4papers)；v4 VLM 审查参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018) 和 [AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | 论文级 matplotlib 图、VLM 图表审查、概念示意图生成 |
-| 引导式论文写作 Skill | 参考 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly)；v4 JSON 大纲参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，引用接地参考 [LiRA](https://arxiv.org/abs/2510.05138)，并行写作参考 [AutoSurvey2](https://arxiv.org/abs/2510.26012) | 结构化 JSON 大纲、引用接地校验、并行章节写作 |
+| 引导式论文写作 Skill | 参考 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly)；v4 JSON 大纲参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，引用接地参考 [LiRA](https://arxiv.org/abs/2510.05138)，并行写作参考 [AutoSurvey2](https://arxiv.org/abs/2510.26012)，风格校准和 Material Passport 参考 [ARS](https://github.com/Imbad0202/academic-research-skills)，Introduction Flowchart 参考 [Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) | 结构化 JSON 大纲、引用接地校验、并行章节写作、风格校准、产物溯源、引言流程图 |
 | 学术写作 Prompt 库 | 引用 [Leey21/awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | 润色、翻译、实验分析、reviewer 检查 |
 | 审稿检查 | 使用 awesome-ai-research-writing 中的 reviewer_check prompt；v4 评审+回滚参考 [PaperOrchestra](https://arxiv.org/abs/2604.05018)，多角度评审参考 [AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2)，完整性闸门和反谄媚协议参考 [ARS](https://github.com/Imbad0202/academic-research-skills) | 多角度评审、评审+回滚机制、结构化评分、完整性闸门、反谄媚协议 |
 | Deep Research Skill (v4 new) | 参考 [Paperguide.ai](https://paperguide.ai/) 的 Deep Research | 自动发现→筛选→提取→趋势分析→综合报告 |
@@ -39,14 +39,14 @@
 literature-review → paper-reading → critical-ideation → experiment-design → scientific-figure-making → scholarly-writing + awesome-ai-research-writing → reviewer_check
 ```
 
-1. `literature-review`：系统性综述领域现状，识别研究 gap（v4: + 引用验证 + 期刊质量排序 + Workbooks 提取）
+1. `literature-review`：系统性综述领域现状，识别研究 gap（v4: + 引用验证 + 期刊质量排序 + Workbooks 提取 + 合规检查）
 2. `paper-reading`：深度阅读关键论文，生成结构化笔记
-3. `critical-ideation`：先筛方向，不让项目在错误的 idea 上浪费时间（v4: + 正反辩论机制）
+3. `critical-ideation`：先筛方向，不让项目在错误的 idea 上浪费时间（v4: + 正反辩论机制 + 五维构思框架）
 4. `experiment-design`：设计实验方案，规划变量控制与消融实验
 5. `scientific-figure-making`：把方向绑定到可见证据，而不是抽象口号（v4: + VLM 审查闭环 + 概念示意图）
-6. `scholarly-writing`：从零构建论文骨架，按章节引导写作（v4: + 结构化 JSON 大纲 + 引用接地 + 并行写作）
+6. `scholarly-writing`：从零构建论文骨架，按章节引导写作（v4: + 结构化 JSON 大纲 + 引用接地 + 并行写作 + 风格校准 + Material Passport + Introduction Flowchart）
 7. `awesome-ai-research-writing`：把草稿润色到论文级表达
-8. `reviewer_check`：防止过度 claim，逼着结论回到证据边界内（v4: + 多角度评审 + 评审回滚）
+8. `reviewer_check`：防止过度 claim，逼着结论回到证据边界内（v4: + 多角度评审 + 评审回滚 + 完整性闸门 + 反谄媚协议）
 
 ### Deep Research Pipeline (v4 new)
 
@@ -73,6 +73,11 @@ deep-research → (optional) critical-ideation → scholarly-writing + awesome-a
 | 多角度评审 | AI Scientist-v2 | 5 份独立评审 + AC Meta-review |
 | 完整性闸门 | ARS | 7项AI失败模式清单，关键阶段强制检查 |
 | 反谄媚协议 | ARS | 魔鬼代言人机制，防止AI降低批评强度 |
+| 风格校准 | ARS | 学习用户写作风格，减少AI味 |
+| Material Passport | ARS | 产物溯源链，记录每段内容生成来源和验证状态 |
+| Introduction Flowchart | Supervisor-Skills | 结构化引言写作流程图模型 |
+| 五维构思框架 | Supervisor-Skills | 更高/更快/更强/更省/更广的Idea评估维度 |
+| 合规检查 | ARS | PRISMA-trAIce 17项 + RAISE 4原则系统综述合规 |
 | Deep Research Skill | Paperguide.ai | 自动发现→筛选→提取→趋势分析→综合报告 |
 
 ## Repository Layout

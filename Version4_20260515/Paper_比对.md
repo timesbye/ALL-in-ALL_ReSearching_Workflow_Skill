@@ -356,11 +356,11 @@ Human-in-the-loop        ●     ●      ○       ○       ○       ●     
 | 自动化程度 | 2 | 3 | **5** | **5** | **5** | 2 | 4 | **5** | **5** | 4 |
 | 开源/可定制 | **5** | 3 | **5** | **5** | **5** | **5** | 1 | 2 | 4 | **5** |
 | 引用可靠性 | 4 | 4 | 1 | 1 | 1 | 1 | 3 | **5** | 3 | 2 |
-| 输出质量 | 3 | 4 | 4 | 3 | 3 | 3 | 3 | **5** | 4 | 3 |
+| 输出质量 | 4 | 4 | 4 | 3 | 3 | 3 | 3 | **5** | 4 | 3 |
 | 科研前端覆盖 | **5** | 2 | **5** | **5** | 4 | 3 | 2 | 1 | **5** | 1 |
 | Human-in-the-loop | **5** | **5** | 1 | 1 | 1 | 4 | 4 | 1 | 1 | 1 |
-| 安全/完整性保障 | 2 | **5** | 1 | 1 | 2 | 2 | 2 | 2 | 1 | 1 |
-| **总分** | **35** | 33 | 26 | 26 | 26 | 26 | 28 | 26 | 28 | 21 |
+| 安全/完整性保障 | 4 | **5** | 1 | 1 | 2 | 2 | 2 | 2 | 1 | 1 |
+| **总分** | **38** | 33 | 26 | 26 | 26 | 26 | 28 | 26 | 28 | 21 |
 
 ---
 
@@ -385,18 +385,18 @@ Human-in-the-loop        ●     ●      ○       ○       ○       ●     
 
 ### ⬜ 仍存在差距（基于 2026.05 最新比对）
 
-| # | 差距 | 来源 | 优先级 | 实现难度 |
-|---|------|------|--------|---------|
-| 1 | **7项AI失败模式清单 / 完整性闸门** | ARS | 🔴 高 | 低（Prompt 增强） |
-| 2 | **反谄媚协议** | ARS | 🔴 高 | 低（Prompt 增强） |
-| 3 | **风格校准 (Style Calibration)** | ARS | 🟡 中 | 中（需参考文本分析） |
-| 4 | **Material Passport 产物溯源** | ARS | 🟡 中 | 中（需输出格式规范） |
-| 5 | **Compliance Agent 合规检查** | ARS | 🟢 低 | 中（PRISMA-trAIce 规则） |
-| 6 | **Findings Memory 科研长程记忆** | DeepScientist | 🟡 中 | 高（需持久化存储） |
-| 7 | **Introduction Flowchart 思考模型** | Supervisor-Skills | 🟡 中 | 低（Prompt 增强） |
-| 8 | **五维构思框架** | Supervisor-Skills | 🟢 低 | 低（已有类似机制） |
-| 9 | **Agentic Tree Search 实验模式** | AI Scientist-v2 | 🟢 低 | 高（需代码执行环境） |
-| 10 | **Data Analysis Agent** | SciDER | 🟢 低 | 高（需代码执行环境） |
+| # | 差距 | 来源 | 优先级 | 实现难度 | 状态 |
+|---|------|------|--------|---------|------|
+| 1 | **7项AI失败模式清单 / 完整性闸门** | ARS | 🔴 高 | 低（Prompt 增强） | ✅ 已实现 |
+| 2 | **反谄媚协议** | ARS | 🔴 高 | 低（Prompt 增强） | ✅ 已实现 |
+| 3 | **风格校准 (Style Calibration)** | ARS | 🟡 中 | 中（需参考文本分析） | ✅ 已实现 |
+| 4 | **Material Passport 产物溯源** | ARS | 🟡 中 | 中（需输出格式规范） | ✅ 已实现 |
+| 5 | **Compliance Agent 合规检查** | ARS | 🟢 低 | 中（PRISMA-trAIce 规则） | ✅ 已实现 |
+| 6 | **Findings Memory 科研长程记忆** | DeepScientist | 🟡 中 | 高（需持久化存储） | ⬜ 未实现 |
+| 7 | **Introduction Flowchart 思考模型** | Supervisor-Skills | 🟡 中 | 低（Prompt 增强） | ✅ 已实现 |
+| 8 | **五维构思框架** | Supervisor-Skills | 🟢 低 | 低（已有类似机制） | ✅ 已实现 |
+| 9 | **Agentic Tree Search 实验模式** | AI Scientist-v2 | 🟢 低 | 高（需代码执行环境） | ⬜ 未实现 |
+| 10 | **Data Analysis Agent** | SciDER | 🟢 低 | 高（需代码执行环境） | ⬜ 未实现 |
 
 ---
 
@@ -405,7 +405,7 @@ Human-in-the-loop        ●     ●      ○       ○       ○       ●     
 | 优势 | 说明 |
 |------|------|
 | **全链路覆盖** | 唯一覆盖 综述→阅读→选题→实验设计→绘图→写作→润色→审稿→深度研究 完整链条的 Prompt Skill 工具 |
-| **Critical Ideation 原创能力** | 主动质疑、正反辩论、竞品检索、方向重构、MVP 收敛——含 Generate-Debate-Evolve 循环 |
+| **Critical Ideation 原创能力** | 主动质疑、正反辩论、竞品检索、方向重构、MVP 收敛——含 Generate-Debate-Evolve 循环和五维构思框架 |
 | **Human-in-the-loop 设计** | 每个环节都保留人类决策权，避免全自动化的伦理风险和质量失控 |
 | **Prompt Skill 架构** | 轻量、可组合、可替换，不依赖特定模型或 API，不绑定特定 AI 编码工具 |
 | **开源免费** | MIT 协议，无使用成本，可自由定制 |
@@ -414,21 +414,30 @@ Human-in-the-loop        ●     ●      ○       ○       ○       ●     
 | **引用验证双模式** | API 验证 + LLM 降级验证，确保引用可靠性 |
 | **评审+回滚机制** | 仅当总分提升时接受修改，防止修改导致质量退化 |
 | **VLM 图表审查** | 生成→VLM检查→修正→再检查的闭环质量保障 |
+| **完整性闸门** | 7项AI失败模式清单，关键阶段强制检查 |
+| **反谄媚协议** | 魔鬼代言人机制，防止AI降低批评强度 |
+| **风格校准** | 学习用户写作风格，减少AI味 |
+| **Material Passport** | 产物溯源链，记录每段内容生成来源和验证状态 |
+| **Introduction Flowchart** | 结构化引言写作流程图模型 |
+| **合规检查** | PRISMA-trAIce 17项 + RAISE 4原则系统综述合规 |
 
 ### vs ARS 的差异化
 
 | 维度 | 我们 | ARS |
 |------|------|-----|
 | 工具绑定 | 不绑定特定 AI 编码工具 | 强绑定 Claude Code / Codex |
-| 选题构思 | ✅ Critical Ideation + 辩论 | ❌ 无 |
+| 选题构思 | ✅ Critical Ideation + 辩论 + 五维框架 | ❌ 无 |
 | 科研绘图 | ✅ matplotlib + VLM 审查 | ❌ 无 |
 | Deep Research | ✅ 趋势分析+综合报告 | ✅ 13-agent 文献调研 |
-| 完整性闸门 | ❌ 无 | ✅ 7项AI失败模式清单 |
-| 反谄媚协议 | ❌ 无 | ✅ 魔鬼代言人机制 |
-| 风格校准 | ❌ 无 | ✅ 学习用户写作风格 |
-| 产物溯源 | ❌ 无 | ✅ Material Passport |
+| 完整性闸门 | ✅ 7项AI失败模式清单 | ✅ 7项AI失败模式清单 |
+| 反谄媚协议 | ✅ 魔鬼代言人机制 | ✅ 魔鬼代言人机制 |
+| 风格校准 | ✅ 学习用户写作风格 | ✅ 学习用户写作风格 |
+| 产物溯源 | ✅ Material Passport | ✅ Material Passport |
+| 合规检查 | ✅ PRISMA-trAIce + RAISE | ✅ PRISMA-trAIce + RAISE |
 | 正反辩论 | ✅ Generate-Debate-Evolve | ❌ 无 |
 | 实验设计 | ✅ experiment-design skill | ❌ 无 |
+| 五维构思 | ✅ 更高/更快/更强/更省/更广 | ❌ 无 |
+| Introduction Flowchart | ✅ 结构化引言流程图 | ❌ 无 |
 
 ---
 
@@ -449,19 +458,21 @@ Phase 1 (核心质量提升) ✅ 已完成
 ├── ✅ 并行章节写作模式
 └── ✅ 多角度评审 + AC Meta-review
 
-Phase 2 (安全与完整性) ← 下一步
-├── 7项AI失败模式清单 + 完整性闸门 (参考 ARS)
-├── 反谄媚协议 (参考 ARS)
-├── 风格校准 (参考 ARS)
-├── Material Passport 产物溯源 (参考 ARS)
-└── Compliance Agent 合规检查 (参考 ARS PRISMA-trAIce)
+Phase 2 (安全与完整性) ✅ 已完成
+├── ✅ 7项AI失败模式清单 + 完整性闸门 (参考 ARS)
+├── ✅ 反谄媚协议 (参考 ARS)
+├── ✅ 风格校准 (参考 ARS)
+├── ✅ Material Passport 产物溯源 (参考 ARS)
+├── ✅ Compliance Agent 合规检查 (参考 ARS PRISMA-trAIce)
+├── ✅ Introduction Flowchart 思考模型 (参考 Supervisor-Skills)
+└── ✅ 五维构思框架 (参考 Supervisor-Skills)
 
-Phase 3 (生态扩展)
-├── Introduction Flowchart 思考模型 (参考 Supervisor-Skills)
+Phase 3 (生态扩展) ← 下一步
 ├── Findings Memory 科研长程记忆 (参考 DeepScientist)
+├── Agentic Tree Search 实验模式 (参考 AI Scientist-v2)
+├── Data Analysis Agent (参考 SciDER)
 ├── PDF 对话式阅读模式
-├── 参考文献管理集成
-└── 树搜索实验规划模板
+└── 参考文献管理集成
 ```
 
 ---

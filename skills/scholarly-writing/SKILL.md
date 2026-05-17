@@ -1,11 +1,11 @@
 ---
 name: scholarly-writing
-description: Use for guided academic paper writing, section by section. This skill helps researchers build complete papers through structured conversation — from Abstract to Introduction, Literature Review, Methods, Results, Discussion, and Conclusion. v4 adds structured JSON outlines with visualization plans and literature strategies, citation grounding verification, and parallel section writing mode. Provides section-specific templates, common mistakes to avoid, and progressive development guidance.
+description: Use for guided academic paper writing, section by section. This skill helps researchers build complete papers through structured conversation — from Abstract to Introduction, Literature Review, Methods, Results, Discussion, and Conclusion. v4 adds structured JSON outlines with visualization plans and literature strategies, citation grounding verification, parallel section writing mode, style calibration, material passport, and introduction flowchart. Provides section-specific templates, common mistakes to avoid, and progressive development guidance.
 ---
 
 # Scholarly Writing
 
-> **设计灵感与参考来源**：本 Skill 的概念参考自 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly)（Agent Skill 格式的引导式论文写作工具）。v4 结构化 JSON 大纲参考自 [PaperOrchestra](https://arxiv.org/abs/2604.05018)（Google Cloud AI Research）的 Outline Agent JSON 蓝图；引用接地校验参考自 [LiRA](https://arxiv.org/abs/2510.05138) 的 citation grounding 机制；并行章节写作参考自 [AutoSurvey2](https://arxiv.org/abs/2510.26012) 的并行生成模式；完整性闸门参考自 [ARS](https://github.com/Imbad0202/academic-research-skills) 的 7 项 AI 失败模式清单。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含 Scholarly 的原始内容。
+> **设计灵感与参考来源**：本 Skill 的概念参考自 [ShiyangZheng/scholarly](https://github.com/ShiyangZheng/scholarly)（Agent Skill 格式的引导式论文写作工具）。v4 结构化 JSON 大纲参考自 [PaperOrchestra](https://arxiv.org/abs/2604.05018)（Google Cloud AI Research）的 Outline Agent JSON 蓝图；引用接地校验参考自 [LiRA](https://arxiv.org/abs/2510.05138) 的 citation grounding 机制；并行章节写作参考自 [AutoSurvey2](https://arxiv.org/abs/2510.26012) 的并行生成模式；完整性闸门参考自 [ARS](https://github.com/Imbad0202/academic-research-skills) 的 7 项 AI 失败模式清单；风格校准和 Material Passport 参考自 ARS；Introduction Flowchart 参考自 [Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills)。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含 Scholarly 的原始内容。
 
 Open `templates/` only as needed. Start from the workflow below.
 
@@ -33,6 +33,8 @@ Use this skill when the user asks to:
 - structure a paper
 - generate a structured outline
 - write sections in parallel
+- calibrate writing style
+- track content provenance
 - 写论文
 - 写毕业论文
 - 论文结构
@@ -42,6 +44,8 @@ Use this skill when the user asks to:
 - 写结果
 - 写讨论
 - 并行写作
+- 风格校准
+- 产物溯源
 
 ## When not to use
 
@@ -64,6 +68,7 @@ Identify:
 - Research question
 - Core contribution (one sentence)
 - Available materials (data, figures, experiment results, literature notes)
+- **User's writing style reference** (if available, for style calibration)
 
 ```text
 Paper Scope
@@ -73,7 +78,58 @@ Paper Scope
 - Core contribution:
 - Available materials:
 - Estimated length:
+- Style reference: [path to user's previous writing, or "default academic"]
 ```
+
+### Stage 1.5: Style calibration (v4 new)
+
+> **来源**：ARS 的风格校准（Style Calibration）机制
+
+Before writing begins, calibrate the output style to match the user's voice and reduce AI-detectable patterns.
+
+**When the user provides a style reference** (previous paper, thesis chapter, or writing sample):
+
+1. **Analyze the reference text** for:
+   - Sentence length distribution (short punchy vs. long complex)
+   - Passive vs. active voice ratio
+   - First-person usage ("we propose" vs. "this paper proposes")
+   - Hedging intensity ("may", "might", "could" vs. definitive statements)
+   - Paragraph structure (topic sentence position, paragraph length)
+   - Technical jargon density
+   - Transition patterns between ideas
+
+2. **Generate a style profile**:
+   ```text
+   Style Profile
+   - Avg sentence length: [N] words
+   - Passive voice ratio: [N]%
+   - First person usage: [frequent / moderate / rare]
+   - Hedging intensity: [high / medium / low]
+   - Avg paragraph length: [N] sentences
+   - Jargon density: [high / medium / low]
+   - Transition style: [explicit connectors / implicit flow]
+   - Notable patterns: [description]
+   ```
+
+3. **Apply the style profile** during all subsequent writing stages.
+
+**When no style reference is provided**:
+
+Use the **default academic style**:
+- Formal but not stiff
+- Active voice preferred, passive for methodology
+- Moderate hedging
+- Clear topic sentences
+- Explicit transitions between sections
+
+**Anti-AI-tone rules** (always apply, regardless of style reference):
+
+1. Avoid repetitive sentence structures (e.g., starting 3+ consecutive sentences with "Moreover", "Furthermore", "Additionally")
+2. Vary sentence length — mix short declarative sentences with longer complex ones
+3. Do not use formulaic transitions in every paragraph ("It is worth noting that...", "It is important to emphasize that...")
+4. Avoid over-qualification chains ("It could potentially be argued that this might somewhat suggest...")
+5. Prefer concrete statements over vague hedging when evidence supports it
+6. Do not end every section with a summary sentence that merely restates the opening
 
 ### Stage 2: Build the structured JSON outline (v4 enhanced)
 
@@ -223,7 +279,7 @@ Citation Grounding Report (Section: [name])
 
 ### Stage 3: Write section by section
 
-For each section, follow the section-specific guidance below.
+For each section, follow the section-specific guidance below. **Apply the style profile from Stage 1.5 throughout.**
 
 #### Abstract
 
@@ -241,16 +297,50 @@ Common mistakes to avoid:
 
 #### Introduction
 
-Four-layer structure:
-1. **Context**: What is the broad problem area?
-2. **Literature**: What have others done?
-3. **Gap**: What is missing or insufficient?
-4. **Purpose**: What does this paper do and why is it different?
+> **Enhanced with Introduction Flowchart** (v4 new, from Supervisor-Skills)
+
+Use the **Introduction Flowchart** thinking model to structure the introduction:
+
+```text
+Introduction Flowchart
+                    ┌─────────────┐
+                    │   Context   │  What is the broad problem area?
+                    │  (1-2 para) │
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │ Literature  │  What have others done? (organized by theme)
+                    │  (2-3 para) │
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │    Gap      │  What is missing or insufficient?
+                    │  (1-2 para) │  ← This is the most critical paragraph
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │   Purpose   │  What does this paper do?
+                    │  (1 para)   │  How is it different from existing work?
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │ Contributions│  Explicit list (3-5 items)
+                    │  (1 para)   │  Each must trace to evidence
+                    └─────────────┘
+```
+
+**Key rules for the Gap paragraph:**
+
+1. The gap must be **specific**, not "more research is needed"
+2. The gap must be **actionable** — it should directly motivate your approach
+3. The gap must be **honest** — do not misrepresent prior work to create a gap
+4. The gap must be **verifiable** — a reader familiar with the field should agree
 
 Common mistakes to avoid:
 - Starting too broadly ("Since the dawn of civilization...")
 - Listing contributions before establishing the gap
 - Overclaiming novelty
+- Writing a "straw man" gap that misrepresents prior work
 
 #### Related Work / Literature Review
 
@@ -361,6 +451,7 @@ After all sections are drafted:
 6. **Check that all citations are grounded** (from Stage 2.5)
 7. **Check that all figures referenced in the outline appear in the text**
 8. **Check terminology consistency across sections**
+9. **Check style consistency** (from Stage 1.5 style profile)
 
 ### Stage 4.5: Integrity gate — 7-item AI failure mode checklist (v4 new)
 
@@ -385,29 +476,84 @@ Integrity Gate Report (Stage 4.5)
 - Status: PASS / BLOCKED / WARNED
 ```
 
-### Stage 5: Save draft
+### Stage 5: Material Passport — content provenance tracking (v4 new)
+
+> **来源**：ARS 的 Material Passport 产物溯源机制
+
+After the draft is complete, generate a Material Passport that records the provenance of every content block in the paper. This enables traceability and accountability.
+
+**Material Passport schema**:
+
+For each paragraph or content block:
+
+```text
+Material Passport Entry
+- Block ID: [section_id]-[paragraph_number]
+- Section: [section name]
+- Content summary: [1-sentence summary]
+- Source type: [user_input | literature_cited | ai_generated | experiment_data | user_revision]
+- Verification status: [verified | unverified | flagged]
+- Citations in block: [list of citation keys]
+- Last modified by: [user | ai]
+- Modification history: [list of changes]
+```
+
+**Source type definitions**:
+
+| Source type | Description | Trust level |
+|------------|-------------|-------------|
+| `user_input` | Directly provided by the user (original text, data, ideas) | High |
+| `literature_cited` | Derived from a cited reference with proper attribution | High (if citation verified) |
+| `experiment_data` | From actual experimental results | High |
+| `ai_generated` | Generated by AI without direct user input or cited source | Medium — requires verification |
+| `user_revision` | Modified by the user after AI generation | High |
+
+**Material Passport report**:
+
+```text
+Material Passport Summary
+- Total content blocks: [N]
+- User input: [N] ([%])
+- Literature cited: [N] ([%])
+- Experiment data: [N] ([%])
+- AI generated: [N] ([%])
+- User revision: [N] ([%])
+- Unverified blocks: [N]
+- Flagged blocks: [N]
+
+High-risk blocks (ai_generated + unverified):
+- [Block ID]: [reason for flag]
+```
+
+**Usage**: The Material Passport is saved alongside the draft. During reviewer_check, the passport helps identify which content blocks need extra scrutiny.
+
+### Stage 6: Save draft
 
 Save the draft to the target project's `paper/` directory:
 
 - Filename: `paper/draft_v1.md` or `paper/draft_v1.tex`
 - JSON outline: `paper/outline.json`
 - Citation grounding report: `paper/citation_grounding_report.md`
+- Material Passport: `paper/material_passport.md`
+- Style profile: `paper/style_profile.md`
 
 ## Default output structure
 
 ```text
 1. Paper Scope Definition
-2. Structured JSON Outline (v4)
-3. Citation Grounding Verification (v4)
-4. Abstract
-5. Introduction
-6. Related Work
-7. Method
-8. Experiments & Results
-9. Discussion
-10. Conclusion
-11. Cross-section Consistency Check
-12. Integrity Gate — AI Failure Mode Checklist (v4)
+2. Style Calibration (v4)
+3. Structured JSON Outline (v4)
+4. Citation Grounding Verification (v4)
+5. Abstract
+6. Introduction (with Flowchart model)
+7. Related Work
+8. Method
+9. Experiments & Results
+10. Discussion
+11. Conclusion
+12. Cross-section Consistency Check
+13. Integrity Gate — AI Failure Mode Checklist (v4)
+14. Material Passport (v4)
 ```
 
 ## Style rules
@@ -420,6 +566,8 @@ Save the draft to the target project's `paper/` directory:
 - Follow the target venue's formatting guidelines
 - **Every citation must be verifiable** — use `[CITE:?]` for unverified references
 - **Figures referenced in the outline must appear in the corresponding section**
+- **Apply the style profile from Stage 1.5** — match the user's voice
+- **Follow anti-AI-tone rules** — avoid repetitive structures and formulaic transitions
 
 ## Relationship to other skills
 

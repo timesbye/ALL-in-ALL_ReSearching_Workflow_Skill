@@ -5,7 +5,7 @@ description: Use for generating systematic literature reviews on a research topi
 
 # Literature Review
 
-> **设计灵感与参考来源**：本 Skill 的概念参考自 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License，AI 驱动的文献综述生成器）。v4 引用验证流程参考自 [PaperOrchestra](https://arxiv.org/abs/2604.05018)（Google Cloud AI Research）的 API 级双重验证机制；期刊质量排序参考自 [Paperguide.ai](https://paperguide.ai/) 的 SJR/SNIP 指标；Workbooks 结构化数据提取参考自 Paperguide.ai 的多论文对比提取功能。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含上述项目的原始代码。
+> **设计灵感与参考来源**：本 Skill 的概念参考自 [CAICAIIs/Auto-Scholar](https://github.com/CAICAIIs/Auto-Scholar)（MIT License，AI 驱动的文献综述生成器）。v4 引用验证流程参考自 [PaperOrchestra](https://arxiv.org/abs/2604.05018)（Google Cloud AI Research）的 API 级双重验证机制；期刊质量排序参考自 [Paperguide.ai](https://paperguide.ai/) 的 SJR/SNIP 指标；Workbooks 结构化数据提取参考自 Paperguide.ai 的多论文对比提取功能；合规检查参考自 [ARS](https://github.com/Imbad0202/academic-research-skills) 的 PRISMA-trAIce 合规 Agent。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含上述项目的原始代码。
 
 Open `templates/` only as needed. Start from the workflow below.
 
@@ -243,6 +243,59 @@ Save the output to the target project's `literature/` directory:
 
 - Filename: `literature/review_[topic-slug].md`
 - BibTeX: `literature/review_[topic-slug].bib`
+
+### Stage 8: Compliance check — systematic review standards (v4 new)
+
+> **来源**：ARS 的 Compliance Agent（PRISMA-trAIce 17 项 + RAISE 4 原则）
+
+For systematic reviews (not required for quick surveys or related work sections), verify compliance with established reporting standards.
+
+**When to run compliance check:**
+
+- The review is a systematic review or meta-analysis
+- The target venue requires PRISMA compliance
+- The user explicitly requests compliance verification
+
+**PRISMA-trAIce checklist** (17 items, adapted for AI-assisted reviews):
+
+| # | Item | Check |
+|---|------|-------|
+| 1 | Research question defined | Is the research question explicitly stated? |
+| 2 | Search strategy documented | Are all search queries recorded? |
+| 3 | Databases listed | Are all databases and sources listed? |
+| 4 | Search date recorded | Is the date of each search recorded? |
+| 5 | Inclusion criteria stated | Are inclusion criteria explicit? |
+| 6 | Exclusion criteria stated | Are exclusion criteria explicit? |
+| 7 | Screening process described | Is the paper screening process documented? |
+| 8 | Data extraction method | Is the data extraction method described? |
+| 9 | Number of results per source | Are result counts per database reported? |
+| 10 | Number of included papers | Is the final included paper count reported? |
+| 11 | Flow diagram possible | Can a PRISMA flow diagram be generated? |
+| 12 | Citation verification method | Is the citation verification method stated? |
+| 13 | Quality assessment method | Is the quality assessment method described? |
+| 14 | Synthesis method | Is the synthesis method (thematic/chronological) stated? |
+| 15 | AI assistance disclosed | Is AI assistance in the review process disclosed? |
+| 16 | Limitations stated | Are review limitations explicitly discussed? |
+| 17 | Reproducibility | Can the review be reproduced from the documented methods? |
+
+**RAISE principles** (4 items, for AI-assisted research):
+
+| # | Principle | Check |
+|---|-----------|-------|
+| 1 | Responsibility | Is human oversight documented at each stage? |
+| 2 | Accountability | Can each claim be traced to a verified source? |
+| 3 | Inclusivity | Are diverse perspectives and venues represented? |
+| 4 | Sustainability | Is the review method reusable for future updates? |
+
+```text
+Compliance Report
+- PRISMA-trAIce items passed: [N]/17
+- PRISMA-trAIce items failed: [N]/17
+- RAISE items passed: [N]/4
+- RAISE items failed: [N]/4
+- Overall compliance: [FULL / PARTIAL / NON-COMPLIANT]
+- Items requiring attention: [list]
+```
 
 ## Workbooks mode (v4 new)
 

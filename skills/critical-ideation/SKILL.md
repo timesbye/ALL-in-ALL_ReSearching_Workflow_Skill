@@ -5,7 +5,7 @@ description: Use for brainstorming, research directions, product concepts, PRD i
 
 # Critical ideation
 
-> **设计灵感与参考来源**：本 Skill 为本项目原创。v4 正反辩论机制参考自 [Google AI Co-Scientist](https://arxiv.org/abs/2502.18864) 的 Generate-Debate-Evolve 循环。
+> **设计灵感与参考来源**：本 Skill 为本项目原创。v4 正反辩论机制参考自 [Google AI Co-Scientist](https://arxiv.org/abs/2502.18864) 的 Generate-Debate-Evolve 循环；五维构思框架参考自 [Supervisor-Skills](https://github.com/HKUSTDial/Supervisor-Skills) 的"更高更快更强更省更广"框架。
 
 Open `templates/` and `examples/` only as needed. Start from the workflow below, then load the specific template or example that matches the user's task.
 
@@ -115,6 +115,34 @@ Each idea should include:
 - Minimum viable version
 
 Avoid vague names like "AI Assistant" or "Smart Platform". Prefer specific, testable concepts.
+
+#### Five-dimension ideation framework (v4 new)
+
+> **来源**：Supervisor-Skills 的"更高更快更强更省更广"五维构思框架
+
+When generating ideas, explicitly consider each of the five differentiation dimensions. An idea that only improves one dimension is weaker than one that improves multiple.
+
+| Dimension | Question | Example |
+|-----------|----------|---------|
+| **Higher (更高)** | Can this achieve higher accuracy, performance, or quality? | "Our method achieves 5% higher F1 than the SOTA" |
+| **Faster (更快)** | Can this run faster, train faster, or converge faster? | "Our approach reduces training time from 48h to 6h" |
+| **Stronger (更强)** | Can this handle harder problems, more diverse inputs, or edge cases? | "Our model generalizes to out-of-distribution data" |
+| **Cheaper (更省)** | Can this use less data, less compute, or fewer annotations? | "Our method works with 10% of the labeled data" |
+| **Broader (更广)** | Can this apply to more domains, more tasks, or more modalities? | "Our framework extends from NLP to CV and multimodal" |
+
+**Usage**: For each generated idea, annotate which dimensions it improves and how:
+
+```text
+Idea: [name]
+- Higher: [how it improves quality, or "N/A"]
+- Faster: [how it improves speed, or "N/A"]
+- Stronger: [how it handles harder problems, or "N/A"]
+- Cheaper: [how it reduces cost, or "N/A"]
+- Broader: [how it extends scope, or "N/A"]
+- Dimensions covered: [N]/5
+```
+
+Ideas that cover more dimensions are generally stronger, but depth in one dimension can outweigh breadth across many.
 
 ### Stage 3: Attack each idea — with Generate-Debate-Evolve (v4 enhanced)
 
