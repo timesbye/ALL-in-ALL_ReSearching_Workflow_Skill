@@ -259,7 +259,7 @@ Use for:
 
 ## 10. Full Workflow
 
-The complete workflow chain from literature review to reviewer check (v4 enhanced):
+The complete workflow chain from literature review to reviewer_check (v4 enhanced):
 
 ```text
 literature-review → paper-reading → critical-ideation → experiment-design → scientific-figure-making → scholarly-writing + awesome-ai-research-writing → reviewer_check
@@ -316,13 +316,13 @@ critical-ideation -> experiment-design
 **Experiment + Figure + Writing** (already have results):
 
 ```text
-experiment-design -> scientific-figure-making -> scholarly-writing -> awesome-ai-research-writing -> reviewer check
+experiment-design -> scientific-figure-making -> scholarly-writing -> awesome-ai-research-writing -> reviewer_check
 ```
 
 **Figure + Writing** (already have results and experiment plan):
 
 ```text
-scientific-figure-making -> scholarly-writing -> awesome-ai-research-writing -> reviewer check
+scientific-figure-making -> scholarly-writing -> awesome-ai-research-writing -> reviewer_check
 ```
 
 **Deep Research only** (comprehensive landscape report):

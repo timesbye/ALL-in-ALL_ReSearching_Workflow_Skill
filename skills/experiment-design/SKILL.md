@@ -5,7 +5,7 @@ description: Use for designing, planning, and iteratively executing scientific e
 
 # Experiment Design
 
-> **设计灵感与参考来源**：本 Skill 的概念参考自 [wjgoarxiv/autoresearch-skill](https://github.com/wjgoarxiv/autoresearch-skill)（MIT License，受 Karpathy autoresearch 启发的自主实验循环 Skill）。本目录中的文档为 ALL-in-ALL ReSearching Workflow Skill 项目基于其理念编写的使用指南，不包含 autoresearch-skill 的原始代码。
+> **设计灵感与参考来源**：本 Skill 的概念参考自 [wjgoarxiv/autoresearch-skill](https://github.com/wjgoarxiv/autoresearch-skill)（MIT License，受 Karpathy autoresearch 启发的自主实验循环 Skill）。本目录中的文档为 ALL-in-ALL_ReSearching_Workflow_Skill 项目基于其理念编写的使用指南，不包含 autoresearch-skill 的原始代码。
 
 Open `templates/` only as needed. Start from the workflow below.
 

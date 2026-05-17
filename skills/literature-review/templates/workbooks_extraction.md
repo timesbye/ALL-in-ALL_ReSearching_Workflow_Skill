@@ -2,7 +2,7 @@
 
 > **来源**：Paperguide.ai 的 Workbooks 多论文结构化数据提取功能
 
-Use this template to extract and compare structured data across multiple papers. This replaces the simpler `paper_summary_table.md` when the user needs a detailed multi-dimensional comparison matrix.
+Use this template to extract and compare structured data across multiple papers. This complements the simpler `paper_summary_table.md` when the user needs a detailed multi-dimensional comparison matrix.
 
 ## Extraction Dimensions
 

@@ -63,10 +63,8 @@ Do not use this skill for:
 - ordinary figure generation
 - pure summarization without ideation
 - tasks where the user wants direct execution but not idea evaluation
-
-For writing tasks, use the academic writing prompt library.
-
-For figure tasks, use the scientific figure making skill.
+- writing tasks (use the academic writing prompt library)
+- figure tasks (use the scientific figure making skill)
 
 ## Core workflow
 

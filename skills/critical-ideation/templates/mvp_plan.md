@@ -30,13 +30,11 @@ The MVP will not include:
 
 ## Implementation Steps
 
-### Day 1
+### Phase 1: Core functionality
 
-### Day 2
+### Phase 2: Integration and testing
 
-### Day 3
-
-### Week 1
+### Phase 3: Polish and demo
 
 ## Demo Output
 

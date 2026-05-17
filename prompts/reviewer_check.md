@@ -2,7 +2,7 @@
 
 > **v4 增强**：评审+回滚机制参考自 [PaperOrchestra](https://arxiv.org/abs/2604.05018) 的 AgentReview；多角度评审参考自 [AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) 的 5 份独立评审 + AC Meta-review 模式；完整性闸门和反谄媚协议参考自 [ARS](https://github.com/Imbad0202/academic-research-skills) 的 AI 失败模式清单和魔鬼代言人机制。
 
-请参考 `prompt-libraries/awesome-ai-research-writing/` 中的审稿、逻辑检查、论文批评思路。
+请参考 `prompt-libraries/awesome-ai-research-writing/` 中的审稿、逻辑检查、论文批评思路（需先 clone 上游仓库）。
 
 ## 第一部分：单次评审检查
 
@@ -70,7 +70,7 @@
 
 ### 评审流程
 
-1. **基线评分**：对当前论文版本打分（使用 `templates/review_scorecard.md`）
+1. **基线评分**：对当前论文版本打分（使用 `prompts/review_scorecard.md`）
 2. **生成修改建议**：基于评审结果生成具体修改方案
 3. **执行修改**：应用修改建议，生成新版本
 4. **再评分**：对新版本重新打分

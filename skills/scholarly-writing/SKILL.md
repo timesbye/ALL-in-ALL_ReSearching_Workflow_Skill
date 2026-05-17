@@ -238,7 +238,7 @@ Create a structured JSON outline that goes beyond simple section headings. The o
       "citations_needed": []
     }
   ],
-  "writing_order": ["abstract", "intro", "related", "method", "experiments", "discussion", "conclusion"],
+  "writing_order": ["intro", "related", "method", "experiments", "discussion", "conclusion", "abstract"],
   "parallel_groups": []
 }
 ```

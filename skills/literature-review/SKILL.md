@@ -356,5 +356,5 @@ Use these bundled files as needed:
   Use when defining the review scope and search strategy.
 - `templates/paper_summary_table.md`
   Use when presenting candidate papers for user approval.
-- `templates/workbooks_extraction.md` (v4 new)
+- `templates/workbooks_extraction.md`
   Use when extracting and comparing structured data across multiple papers.

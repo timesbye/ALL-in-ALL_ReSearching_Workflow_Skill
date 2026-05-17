@@ -24,17 +24,22 @@
 
 详细比对见同目录 [`Paper_比对.md`](Paper_比对.md)。
 
-### 综合评分（8维度，满分40）
+### 综合评分（10维度，满分50）
+
+> 注：以下评分基于 v4 Phase 2 完成后的状态，与 Paper_比对.md 中的 10 维度评分体系一致。
 
 | 排名 | 工具 | 总分 | 核心长板 | 核心短板 |
 |------|------|------|---------|---------|
-| 1 | **我们** | **31** | 功能广度、开源度、HITL、科研前端 | 引用可靠性、自动化程度 |
-| 2 | AI Scientist-v2 | 27 | 自动化、科研前端 | 易用性、HITL |
-| 3 | Paperguide | 25 | 易用性 | 开源度、科研前端 |
-| 3 | AI Co-Scientist | 25 | 科研前端 | 开源度 |
-| 5 | PaperOrchestra | 24 | 引用可靠性、输出质量 | 功能广度、HITL |
-| 6 | CycleResearcher | 20 | 开源度 | 功能广度 |
-| 6 | AutoSurvey2 | 20 | — | 功能广度 |
+| 1 | **我们 v4** | **38** | 功能广度、开源度、HITL、科研前端 | 自动化程度 |
+| 2 | ARS | 33 | 安全完整性、输出质量 | 科研前端覆盖 |
+| 3 | AI Scientist-v2 | 28 | 自动化、科研前端 | 易用性、HITL |
+| 4 | Paperguide | 28 | 易用性 | 开源度、科研前端 |
+| 5 | DeepScientist | 26 | 自动化、科研前端 | 易用性、HITL |
+| 5 | AI-Researcher | 26 | 自动化、科研前端 | 易用性、HITL |
+| 5 | SciDER | 26 | 数据驱动 | 易用性、HITL |
+| 5 | Supervisor-Skills | 26 | 易用性 | 功能广度 |
+| 5 | PaperOrchestra | 26 | 引用可靠性、输出质量 | 功能广度、HITL |
+| 10 | CycleResearcher | 21 | 开源度 | 功能广度 |
 
 ### 关键差距识别
 
@@ -113,7 +118,7 @@
 以下内容在 v4 中保持不变：
 
 - 项目核心定位：Skill 整合概念，Prompt 模块化
-- 8 类核心能力框架
+- 9 类核心能力框架（v4 新增 deep-research）
 - Human-in-the-loop 设计哲学
 - MIT 开源协议
 - CLI 入口和项目模板结构
@@ -124,27 +129,32 @@
 ## 五、实施路线
 
 ```
-Phase 1 — 核心质量提升（v4.0）
+Phase 1 — 核心质量提升 ✅ 已完成
 │
-├── 1.1 literature-review: 引用验证 + 期刊质量排序
-├── 1.2 scholarly-writing: 结构化 JSON 大纲
-├── 1.3 reviewer_check: 评审+回滚 + 多角度评审
-└── 1.4 scientific-figure-making: VLM 图表审查闭环
+├── ✅ 1.1 literature-review: 引用验证 + 期刊质量排序
+├── ✅ 1.2 scholarly-writing: 结构化 JSON 大纲
+├── ✅ 1.3 reviewer_check: 评审+回滚 + 多角度评审
+└── ✅ 1.4 scientific-figure-making: VLM 图表审查闭环
 │
-Phase 2 — 功能完整性（v4.1）
+Phase 2 — 功能完整性 ✅ 已完成
 │
-├── 2.1 新增 workbooks_extraction 模板
-├── 2.2 新增 deep-research skill
-├── 2.3 scholarly-writing: 引用接地校验
-├── 2.4 critical-ideation: 辩论机制
-└── 2.5 并行章节写作模式
+├── ✅ 2.1 新增 workbooks_extraction 模板
+├── ✅ 2.2 新增 deep-research skill
+├── ✅ 2.3 scholarly-writing: 引用接地校验
+├── ✅ 2.4 critical-ideation: 辩论机制
+├── ✅ 2.5 并行章节写作模式
+├── ✅ 2.6 完整性闸门 + 反谄媚协议
+├── ✅ 2.7 风格校准 + Material Passport
+├── ✅ 2.8 Introduction Flowchart + 五维构思框架
+└── ✅ 2.9 合规检查 (PRISMA-trAIce + RAISE)
 │
-Phase 3 — 生态扩展（v4.2）
+Phase 3 — 生态扩展 ← 下一步
 │
-├── 3.1 概念示意图自动生成
-├── 3.2 experiment-design: 树搜索实验规划
-├── 3.3 PDF 对话式阅读模式
-└── 3.4 参考文献管理集成
+├── 3.1 Findings Memory 科研长程记忆
+├── 3.2 Agentic Tree Search 实验模式
+├── 3.3 Data Analysis Agent
+├── 3.4 PDF 对话式阅读模式
+└── 3.5 参考文献管理集成
 ```
 
 ---

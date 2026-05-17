@@ -1,6 +1,6 @@
 ---
 name: deep-research
-description: Use for generating comprehensive deep research reports on a research topic. This skill goes beyond literature review by automatically discovering papers, filtering by relevance and quality, extracting structured data, analyzing trends, and synthesizing a comprehensive research report with trend analysis and future predictions. It is the deep-dive mode of literature-review, independent as a standalone skill.
+description: Use for generating comprehensive deep research reports on a research topic. This skill goes beyond literature review by automatically discovering papers, filtering by relevance and quality, extracting structured data, analyzing trends, and synthesizing a comprehensive research report with trend analysis and future predictions. It extends literature-review into a deep-dive mode, operating as an independent standalone skill.
 ---
 
 # Deep Research
@@ -125,7 +125,7 @@ For each approved paper, extract structured data beyond what a standard review w
 4. **Evolution data**: How this paper builds on or differs from prior work
 5. **Gap data**: What the paper identifies as future work or limitations
 
-Use `templates/workbooks_extraction.md` from `literature-review` for structured extraction.
+Use `skills/literature-review/templates/workbooks_extraction.md` for structured extraction.
 
 ### Stage 6: Trend analysis
 
